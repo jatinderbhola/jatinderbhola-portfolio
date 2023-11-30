@@ -6,18 +6,18 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
 	title: {
-		default: "chronark.com",
-		template: "%s | chronark.com",
+		default: "jatinderbhola.com",
+		template: "%s | jatinderbhola.com",
 	},
-	description: "Co-founder of unkey.dev and founder of planetfall.io",
+	description: "Jatinder Bhola, with over 8 years of experience since 2013, excels in software engineering and team leadership. Specializes in problem-solving, innovative solutions, and managing the entire software development lifecycle. Proficient in Node.js, Angular JS, MongoDB, JavaScript, REST APIs, and familiar with Java, SQL, AWS, Google Cloud Services. Adept in frontend and backend development, leveraging cloud platforms and modern tools like React, Redux, Angular, Heroku, and Visual Studio Code. Committed to delivering high-quality, scalable software solutions that enhance business productivity",
 	openGraph: {
-		title: "chronark.com",
-		description: "Co-founder of unkey.dev and founder of planetfall.io",
-		url: "https://chronark.com",
-		siteName: "chronark.com",
+		title: "jatinderbhola.com",
+		description: "Jatinder Bhola, with over 8 years of experience since 2013, excels in software engineering and team leadership. Specializes in problem-solving, innovative solutions, and managing the entire software development lifecycle. Proficient in Node.js, Angular JS, MongoDB, JavaScript, REST APIs, and familiar with Java, SQL, AWS, Google Cloud Services. Adept in frontend and backend development, leveraging cloud platforms and modern tools like React, Redux, Angular, Heroku, and Visual Studio Code. Committed to delivering high-quality, scalable software solutions that enhance business productivity",
+		url: "https://jatinderbhola.com",
+		siteName: "jatinderbhola.com",
 		images: [
 			{
-				url: "https://chronark.com/og.png",
+				url: "https://jatinderbhola.com/og.png",
 				width: 1920,
 				height: 1080,
 			},
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 		},
 	},
 	twitter: {
-		title: "Chronark",
+		title: "jatinder bhola",
 		card: "summary_large_image",
 	},
 	icons: {
