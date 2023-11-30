@@ -35,7 +35,7 @@ export default function Home() {
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 			<div className="my-16 text-center animate-fade-in">
 				<h2 className="text-sm text-zinc-500 ">
-					Software Engineer Tech Lead at SSENSE, working to improve Shipping XP for our loyal customers ♥️.
+					As a dedicated Software Engineer Tech Lead at SSENSE, I am passionately engaged in enhancing the Shipping Experience for our valued customers. My expertise lies in leveraging cutting-edge technologies and innovative strategies to streamline and optimize our shipping processes, ensuring a smooth and efficient delivery system. Committed to excellence, I continuously work towards elevating the customer journey, reflecting SSENSE's commitment to superior service and customer satisfaction.
 				</h2>
 			</div>
 		</div>
