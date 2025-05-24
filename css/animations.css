@@ -1,0 +1,837 @@
+
+/* Animations - Cosmos Neural Theme */
+
+/* Core Animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes char-reveal {
+    from {
+        opacity: 0;
+        transform: translateY(20px) rotateX(90deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) rotateX(0deg);
+    }
+}
+
+@keyframes cursor-blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+@keyframes text-reveal {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+        filter: blur(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+@keyframes neural-pulse {
+    0% {
+        text-shadow: 
+            0 0 10px var(--neural-cyan),
+            0 0 20px var(--neural-cyan),
+            0 0 30px var(--neural-cyan);
+    }
+    100% {
+        text-shadow: 
+            0 0 20px var(--neural-cyan),
+            0 0 30px var(--neural-cyan),
+            0 0 40px var(--neural-cyan),
+            0 0 50px var(--neural-cyan);
+    }
+}
+
+@keyframes pulse-border {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.3;
+        transform: scale(1.05);
+    }
+}
+
+/* Loading Animations */
+@keyframes pulse-node {
+    0%, 100% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+        box-shadow: 0 0 20px var(--neural-cyan);
+    }
+}
+
+@keyframes pulse-connection {
+    0%, 100% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.8;
+        box-shadow: 0 0 10px var(--neural-cyan);
+    }
+}
+
+@keyframes loading-text {
+    0%, 100% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+        color: var(--neural-cyan);
+    }
+}
+
+/* AI Component Animations */
+@keyframes brain-pulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(0, 245, 255, 0.5);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 
+            0 0 30px rgba(0, 245, 255, 0.8),
+            0 0 50px rgba(255, 107, 157, 0.3);
+    }
+}
+
+@keyframes neural-flow {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100px 100px;
+    }
+}
+
+@keyframes stream-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-glow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse-ring {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.4;
+    }
+}
+
+/* Skills Animations */
+@keyframes skill-pulse {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.6;
+        transform: scale(1.2);
+    }
+}
+
+@keyframes constellation-visible {
+    from {
+        opacity: 0;
+        transform: scale(0.8) rotateY(90deg);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) rotateY(0deg);
+    }
+}
+
+/* Experience Timeline Animations */
+@keyframes rocket-boost {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.3);
+        color: var(--neural-pink);
+        text-shadow: 0 0 20px var(--neural-pink);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes rocket-launch {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(180deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+        opacity: 1;
+    }
+}
+
+@keyframes marker-pulse {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.6;
+        transform: scale(1.5);
+    }
+}
+
+/* Contact Component Animations */
+@keyframes signal-pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+@keyframes avatar-glow {
+    0%, 100% {
+        box-shadow: 
+            0 0 20px var(--neural-cyan),
+            inset 0 0 20px rgba(0, 245, 255, 0.2);
+    }
+    50% {
+        box-shadow: 
+            0 0 40px var(--neural-pink),
+            0 0 60px var(--neural-cyan),
+            inset 0 0 30px rgba(255, 107, 157, 0.3);
+    }
+}
+
+@keyframes beam-pulse {
+    0%, 100% {
+        opacity: 0.6;
+        height: 100px;
+    }
+    50% {
+        opacity: 1;
+        height: 120px;
+        box-shadow: 0 0 20px var(--neural-cyan);
+    }
+}
+
+@keyframes icon-pulse {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.6;
+        transform: scale(1.1);
+    }
+}
+
+@keyframes status-blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+}
+
+@keyframes signal-bar {
+    0% {
+        transform: scaleY(0.5);
+    }
+    50% {
+        transform: scaleY(1.2);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+/* Particle Animations */
+@keyframes particle-transmit {
+    0% {
+        opacity: 0;
+        transform: translate(0, 0) scale(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(var(--random-x, 20px), var(--random-y, -30px)) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(var(--random-x, 40px), var(--random-y, -60px)) scale(0);
+    }
+}
+
+@keyframes particle-float {
+    0% {
+        opacity: 0;
+        transform: translateY(0) scale(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-20px) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-40px) scale(0);
+    }
+}
+
+@keyframes success-particle {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(0);
+    }
+    50% {
+        opacity: 0.8;
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(2);
+    }
+}
+
+@keyframes rainbow-particle {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(0) rotate(0deg);
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(3) rotate(360deg);
+        filter: hue-rotate(var(--hue, 0deg));
+    }
+}
+
+/* Interactive Animations */
+@keyframes ripple {
+    0% {
+        transform: scale(0);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+@keyframes btn-particle {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+}
+
+/* Form Animations */
+@keyframes input-focus {
+    0% {
+        box-shadow: 0 0 0 rgba(0, 245, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(0, 245, 255, 0.3);
+    }
+}
+
+@keyframes input-clear-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+        background: rgba(255, 107, 157, 0.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes form-submit {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 10px 30px rgba(0, 245, 255, 0.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Modal Animations */
+@keyframes modal-enter {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes modal-backdrop {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Achievement Animations */
+@keyframes achievement-visible {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes achievement-icon {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(1.2);
+        color: var(--neural-gold);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+/* Proficiency Chart Animation */
+@keyframes proficiency-fill {
+    0% {
+        stroke-dashoffset: 314; /* 2 * π * 50 */
+    }
+    100% {
+        stroke-dashoffset: var(--final-offset);
+    }
+}
+
+@keyframes percentage-count {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Timeline Animations */
+@keyframes timeline-item-enter {
+    0% {
+        opacity: 0;
+        transform: translateY(50px) rotateX(10deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotateX(0deg);
+    }
+}
+
+@keyframes timeline-marker-activate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+        box-shadow: 0 0 30px var(--neural-cyan);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Loading States */
+@keyframes loading-dots {
+    0%, 20% {
+        color: var(--neural-cyan);
+        transform: scale(1);
+    }
+    50% {
+        color: var(--neural-pink);
+        transform: scale(1.2);
+    }
+    80%, 100% {
+        color: var(--neural-cyan);
+        transform: scale(1);
+    }
+}
+
+@keyframes spinner-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes profile-switching {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+        filter: blur(2px);
+    }
+}
+
+/* Tech Stack Animations */
+@keyframes tech-node-appear {
+    0% {
+        opacity: 0;
+        transform: scale(0) rotate(-180deg);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1.2) rotate(-90deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+@keyframes tech-connection-draw {
+    0% {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        opacity: 0;
+    }
+    100% {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 0;
+        opacity: 0.6;
+    }
+}
+
+/* Metric Animations */
+@keyframes metric-counter {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes progress-fill {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: var(--target-width);
+    }
+}
+
+/* Hover Effects */
+@keyframes hover-glow {
+    0% {
+        box-shadow: 0 5px 15px rgba(0, 245, 255, 0.2);
+    }
+    100% {
+        box-shadow: 0 10px 30px rgba(0, 245, 255, 0.4);
+    }
+}
+
+@keyframes hover-lift {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-8px);
+    }
+}
+
+/* Scrolling Animations */
+@keyframes scroll-indicator {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+@keyframes parallax-float {
+    0%, 100% {
+        transform: translateY(0) rotateZ(0deg);
+    }
+    33% {
+        transform: translateY(-10px) rotateZ(1deg);
+    }
+    66% {
+        transform: translateY(5px) rotateZ(-1deg);
+    }
+}
+
+/* AI Specific Animations */
+@keyframes ai-thinking {
+    0%, 100% {
+        opacity: 0.3;
+    }
+    33% {
+        opacity: 1;
+    }
+    66% {
+        opacity: 0.6;
+    }
+}
+
+@keyframes neural-network-pulse {
+    0% {
+        stroke-width: 1;
+        opacity: 0.3;
+    }
+    50% {
+        stroke-width: 2;
+        opacity: 0.8;
+        filter: drop-shadow(0 0 5px var(--neural-cyan));
+    }
+    100% {
+        stroke-width: 1;
+        opacity: 0.3;
+    }
+}
+
+@keyframes data-flow {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+/* Easter Egg Animations */
+@keyframes easter-egg-activate {
+    0% {
+        filter: hue-rotate(0deg) saturate(1);
+    }
+    25% {
+        filter: hue-rotate(90deg) saturate(1.5);
+    }
+    50% {
+        filter: hue-rotate(180deg) saturate(2);
+    }
+    75% {
+        filter: hue-rotate(270deg) saturate(1.5);
+    }
+    100% {
+        filter: hue-rotate(360deg) saturate(1);
+    }
+}
+
+@keyframes cosmic-dance {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    25% {
+        transform: scale(1.1) rotate(90deg);
+    }
+    50% {
+        transform: scale(0.9) rotate(180deg);
+    }
+    75% {
+        transform: scale(1.05) rotate(270deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+/* Responsive Animation Adjustments */
+@media (max-width: 768px) {
+    /* Reduce animation intensity on mobile */
+    @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+    }
+    
+    @keyframes brain-pulse {
+        0%, 100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.02);
+        }
+    }
+    
+    /* Disable heavy animations on mobile */
+    .skill-node,
+    .timeline-item,
+    .contact-channel-card {
+        animation-duration: 0.3s;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    /* Respect user's motion preferences */
+    * {
+        animation-duration: 0.3s !important;
+        animation-iteration-count: 1 !important;
+    }
+    
+    .floating,
+    .brain-pulse,
+    .signal-transmitting,
+    .neural-pulse {
+        animation: none !important;
+    }
+}
+
+/* Animation Performance Optimization */
+.will-change-transform {
+    will-change: transform;
+}
+
+.will-change-opacity {
+    will-change: opacity;
+}
+
+.gpu-accelerated {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+/* Animation Utility Classes */
+.animate-in {
+    animation: slide-up 0.8s ease-out;
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse {
+    animation: neural-pulse 2s ease-in-out infinite alternate;
+}
+
+.animate-glow {
+    animation: hover-glow 0.3s ease-out forwards;
+}
+
+.animate-lift {
+    animation: hover-lift 0.3s ease-out forwards;
+}
+
+/* Staggered Animation Delays */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+
+/* Animation States */
+.profile-switching {
+    animation: profile-switching 0.8s ease-in-out;
+    pointer-events: none;
+}
+
+.transmission-success {
+    animation: cosmic-dance 3s ease-in-out;
+}
+
+.channel-activating {
+    animation: hover-glow 0.8s ease-out;
+}
+
+.ai-animate-in {
+    animation: slide-up 1s ease-out, fade-in 1s ease-out;
+}
+
+.hero-visible .hero-char {
+    animation: char-reveal 0.8s ease-out forwards;
+}
+
+.constellation-visible {
+    animation: constellation-visible 1.5s ease-out;
+}
+
+.contact-visible .signal-ring {
+    animation: signal-pulse 3s ease-in-out infinite;
+}
+
+.timeline-visible {
+    animation: timeline-item-enter 0.8s ease-out;
+}

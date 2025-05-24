@@ -1,0 +1,330 @@
+{
+    "seoTags": {
+      "leadership": [
+        "frontend team lead",
+        "ui/ux leadership",
+        "react team management",
+        "frontend architecture",
+        "design system leadership",
+        "component library management",
+        "frontend performance optimization",
+        "user experience strategy",
+        "accessibility leadership",
+        "responsive design expert",
+        "frontend mentorship",
+        "code review leadership",
+        "agile frontend development",
+        "cross-browser compatibility",
+        "progressive web apps"
+      ],
+      "technicalSkills": [
+        "react.js",
+        "typescript",
+        "javascript es6+",
+        "next.js",
+        "vue.js",
+        "angular",
+        "html5",
+        "css3",
+        "sass/scss",
+        "styled-components",
+        "tailwind css",
+        "webpack",
+        "vite",
+        "rollup",
+        "babel",
+        "eslint",
+        "prettier",
+        "storybook",
+        "jest",
+        "cypress",
+        "playwright",
+        "figma",
+        "sketch",
+        "design tokens",
+        "micro-frontends"
+      ],
+      "frontendSpecific": [
+        "component architecture",
+        "design systems",
+        "atomic design",
+        "frontend performance",
+        "core web vitals",
+        "accessibility wcag",
+        "responsive design",
+        "mobile-first design",
+        "cross-browser testing",
+        "frontend build tools",
+        "state management",
+        "redux",
+        "zustand",
+        "context api",
+        "frontend testing",
+        "visual regression testing",
+        "a/b testing",
+        "frontend monitoring",
+        "user analytics"
+      ]
+    },
+    "personalInfo": {
+      "name": "Jatinder Bhola",
+      "title": "Senior Frontend Engineering Lead",
+      "subtitle": "React · TypeScript · Design Systems · Team Leadership",
+      "location": "Toronto, ON, Canada",
+      "phone": "+1 647 716 0952",
+      "email": "JatinderBhola@gmail.com",
+      "linkedin": "https://linkedin.com/in/jatinderbhola",
+      "github": "https://github.com/jatinderbhola"
+    },
+    "summary": "Frontend engineering leader with 8+ years specializing in React, TypeScript, and scalable component architectures. Proven track record leading frontend teams to deliver high-performance, accessible user interfaces that serve millions of users. Expert in design systems, performance optimization, and creating development workflows that empower teams to ship quality code faster. Passionate about bridging the gap between design and engineering while fostering inclusive, collaborative frontend cultures.",
+    "latestAiProduct": {
+      "title": "AI-Enhanced Frontend Development Tools",
+      "description": "Leading the adoption of AI-powered tools to revolutionize frontend development workflows and user experience optimization",
+      "tagline": "Where Artificial Intelligence Meets Beautiful User Interfaces",
+      "initiatives": [
+        {
+          "name": "AI-Powered Component Generation",
+          "description": "Implemented AI tools that generate React components from design mockups, reducing development time by 60%",
+          "icon": "fas fa-magic",
+          "metrics": ["60% faster development", "95% design accuracy", "40% fewer iterations"]
+        },
+        {
+          "name": "Intelligent Design System",
+          "description": "Created AI-driven design token management that automatically suggests optimal color palettes and spacing",
+          "icon": "fas fa-palette",
+          "metrics": ["50% design consistency", "30% faster prototyping", "90% brand compliance"]
+        },
+        {
+          "name": "Smart Performance Optimization",
+          "description": "Deployed AI algorithms that analyze user behavior to automatically optimize Core Web Vitals and loading performance",
+          "icon": "fas fa-tachometer-alt",
+          "metrics": ["35% faster load times", "25% better LCP scores", "40% improved CLS"]
+        },
+        {
+          "name": "AI-Assisted Accessibility Testing",
+          "description": "Integrated AI tools that automatically detect and suggest fixes for accessibility issues across components",
+          "icon": "fas fa-universal-access",
+          "metrics": ["90% WCAG compliance", "50% fewer a11y bugs", "80% faster audits"]
+        }
+      ],
+      "impact": "These AI-enhanced tools have increased team productivity by 45% while improving code quality and user experience metrics across all frontend applications.",
+      "technologies": ["OpenAI GPT", "Computer Vision APIs", "Design-to-Code AI", "Performance Analysis ML", "Accessibility AI Tools", "Natural Language Processing"],
+      "futureVision": "Building autonomous frontend development environments where AI and human creativity collaborate to create pixel-perfect, accessible, and performant user experiences."
+    },
+    "coreCompetencies": {
+      "leadership": [
+        "Frontend Team Leadership",
+        "Design System Strategy",
+        "Performance Optimization Leadership",
+        "Code Review & Quality Assurance",
+        "Cross-functional Collaboration with Design",
+        "Accessibility & Inclusive Design"
+      ],
+      "technical": [
+        "Component Architecture Design",
+        "Frontend Performance Engineering",
+        "Design System Implementation",
+        "Progressive Web App Development",
+        "Frontend Testing Strategy",
+        "AI-Enhanced Development Workflows"
+      ]
+    },
+    "technicalSkills": {
+      "frontendFrameworks": {
+        "primary": ["React.js", "Next.js", "TypeScript"],
+        "secondary": ["Vue.js", "Angular", "Svelte"],
+        "tools": ["Vite", "Webpack", "Rollup", "Parcel"]
+      },
+      "styling": {
+        "languages": ["CSS3", "Sass/SCSS", "Less"],
+        "frameworks": ["Tailwind CSS", "Styled Components", "Emotion", "CSS Modules"],
+        "design": ["Figma", "Sketch", "Adobe XD", "Design Tokens"]
+      },
+      "testing": {
+        "unit": ["Jest", "React Testing Library", "Vitest"],
+        "e2e": ["Cypress", "Playwright", "Puppeteer"],
+        "visual": ["Chromatic", "Percy", "Storybook"]
+      },
+      "performance": {
+        "tools": ["Lighthouse", "Web Vitals", "Bundle Analyzer"],
+        "techniques": ["Code Splitting", "Lazy Loading", "Image Optimization", "CDN"],
+        "monitoring": ["Sentry", "DataDog RUM", "Google Analytics"]
+      },
+      "accessibility": {
+        "tools": ["axe-core", "WAVE", "Pa11y", "Lighthouse"],
+        "standards": ["WCAG 2.1", "ARIA", "Section 508"],
+        "testing": ["Screen Readers", "Keyboard Navigation", "Color Contrast"]
+      },
+      "buildTools": {
+        "bundlers": ["Webpack", "Vite", "Rollup", "Parcel"],
+        "transpilers": ["Babel", "TypeScript", "SWC"],
+        "linters": ["ESLint", "Prettier", "Stylelint"]
+      }
+    },
+    "experience": [
+      {
+        "position": "Frontend Engineering Lead",
+        "company": "SSENSE",
+        "location": "Toronto",
+        "duration": "July 2022 - Present",
+        "type": "leadership",
+        "highlights": [
+          "45% faster frontend delivery",
+          "99.9% uptime maintained",
+          "3.9% conversion improvement",
+          "5-person frontend team"
+        ],
+        "achievements": [
+          "Led frontend architecture transformation that improved page load speeds by 45% and Core Web Vitals scores across all customer-facing applications",
+          "Established comprehensive design system with 150+ reusable React components, reducing development time by 60% and ensuring brand consistency across 12 product areas",
+          "Implemented AI-powered component generation workflow that decreased UI development time by 40% while maintaining 95% design fidelity",
+          "Mentored 5 frontend engineers, resulting in 3 promotions and establishing frontend best practices that became company-wide standards",
+          "Drove accessibility initiative achieving WCAG 2.1 AA compliance across all applications, improving user experience for 15% more customers",
+          "Optimized checkout flow frontend performance contributing to 3.9% conversion rate increase and $500K additional monthly revenue",
+          "Established frontend testing strategy with 90%+ component test coverage and visual regression testing, reducing UI bugs by 70%",
+          "Built micro-frontend architecture enabling independent team deployments and reducing deployment bottlenecks by 80%"
+        ]
+      },
+      {
+        "position": "Senior Frontend Developer",
+        "company": "SSENSE",
+        "location": "Toronto", 
+        "duration": "August 2021 - July 2022",
+        "type": "technical",
+        "highlights": [
+          "React performance optimization",
+          "Component library creation",
+          "Mobile-first redesign",
+          "A/B testing implementation"
+        ],
+        "achievements": [
+          "Architected and built React component library with TypeScript, serving as foundation for 8 different product teams and ensuring UI consistency",
+          "Redesigned mobile shopping experience using responsive design principles, increasing mobile conversion rates by 25% and reducing bounce rate by 30%",
+          "Implemented advanced state management solution using Zustand and React Query, improving app performance by 35% and developer experience",
+          "Created comprehensive frontend testing suite with Jest and Cypress, achieving 85% code coverage and reducing production bugs by 60%",
+          "Built Progressive Web App capabilities including offline support and push notifications, increasing user engagement by 40%",
+          "Optimized bundle size through code splitting and lazy loading strategies, reducing initial load time by 50% and improving Core Web Vitals scores"
+        ]
+      },
+      {
+        "position": "Frontend Developer",
+        "company": "DriverCheck",
+        "location": "Toronto",
+        "duration": "October 2020 - August 2021", 
+        "type": "engineering",
+        "highlights": [
+          "Angular to React migration", 
+          "Real-time dashboard creation",
+          "Accessibility improvements",
+          "Cross-browser compatibility"
+        ],
+        "achievements": [
+          "Led migration from Angular to React for COVID-19 testing platform, improving development velocity by 40% and reducing technical debt",
+          "Built real-time dashboard using React and WebSocket connections to display live testing data for 70,000+ daily tests across Ontario",
+          "Implemented comprehensive accessibility features ensuring WCAG 2.1 compliance, enabling platform use for healthcare workers with disabilities",
+          "Created responsive design system supporting desktop, tablet, and mobile interfaces used by 200+ healthcare professionals daily",
+          "Developed automated testing pipeline with Jest and React Testing Library, achieving 80% code coverage and preventing regression bugs",
+          "Optimized application performance through React.memo, useMemo, and useCallback implementations, reducing render time by 45%"
+        ]
+      },
+      {
+        "position": "Full-Stack Developer (Frontend Focus)",
+        "company": "RugSimple", 
+        "location": "Toronto",
+        "duration": "December 2015 - October 2020",
+        "type": "leadership",
+        "highlights": [
+          "Vue.js application architecture",
+          "E-commerce frontend optimization", 
+          "35% session duration increase",
+          "Mobile-first redesign"
+        ],
+        "achievements": [
+          "Architected Vue.js-based customer portal that increased user session duration by 35% and customer satisfaction scores by 40%",
+          "Designed and implemented responsive e-commerce interface that boosted online sales by 60% and mobile conversion rates by 45%", 
+          "Created custom CSS framework and component library that reduced development time by 50% and ensured consistent branding",
+          "Built interactive data visualization dashboard using D3.js and Chart.js, enabling customers to track inventory and performance metrics",
+          "Implemented progressive enhancement strategies ensuring functionality across all browsers, supporting customers with older devices",
+          "Optimized images and assets reducing page load times by 40% and improving SEO rankings for key product pages"
+        ],
+        "techStack": ["Vue.js", "Nuxt.js", "JavaScript ES6+", "Sass", "Webpack", "D3.js", "Chart.js", "Cypress", "Jest"]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Postgraduate Certificate – Mobile Application Development",
+        "institution": "Lambton College",
+        "location": "Toronto, Ontario, Canada", 
+        "duration": "2015 – 2016",
+        "type": "postgraduate",
+        "focus": "Frontend mobile development, React Native, responsive design"
+      },
+      {
+        "degree": "Bachelor of Computer Science",
+        "institution": "CT Institute of Engineering & Management",
+        "location": "Punjab, India",
+        "duration": "2009 – 2013", 
+        "type": "undergraduate",
+        "focus": "Web technologies, user interface design, software engineering"
+      }
+    ],
+    "impactSummary": {
+      "performanceImpact": "Improved frontend performance by 45% through optimization and AI-enhanced tools",
+      "teamProductivity": "Increased development velocity by 60% with design systems and component libraries", 
+      "userExperience": "Enhanced conversion rates by 25% through mobile-first responsive design",
+      "codeQuality": "Reduced UI bugs by 70% with comprehensive testing and code review processes",
+      "accessibility": "Achieved WCAG 2.1 AA compliance across all applications serving diverse user base"
+    },
+    "projects": [
+      {
+        "name": "AI-Powered Design System",
+        "description": "Revolutionary design system that uses AI to maintain consistency and generate new components",
+        "technologies": ["React", "TypeScript", "Storybook", "Design Tokens", "OpenAI API"],
+        "impact": "50% faster component development, 95% design consistency"
+      },
+      {
+        "name": "Performance Optimization Suite", 
+        "description": "Comprehensive frontend performance monitoring and optimization toolkit",
+        "technologies": ["Web Vitals", "Lighthouse CI", "Bundle Analyzer", "React Profiler"],
+        "impact": "45% improvement in Core Web Vitals across all applications"
+      },
+      {
+        "name": "Micro-Frontend Architecture",
+        "description": "Scalable micro-frontend system enabling independent team deployments", 
+        "technologies": ["Module Federation", "React", "TypeScript", "Webpack 5"],
+        "impact": "80% reduction in deployment bottlenecks, improved team autonomy"
+      }
+    ],
+    "certifications": [
+      {
+        "name": "Google Mobile Web Specialist",
+        "issuer": "Google",
+        "year": "2023"
+      },
+      {
+        "name": "React Performance Optimization",
+        "issuer": "Epic React",
+        "year": "2022"
+      },
+      {
+        "name": "Web Accessibility Specialist",
+        "issuer": "International Association of Accessibility Professionals",
+        "year": "2022"
+      }
+    ],
+    "metrics": {
+      "totalExperience": 8,
+      "teamsLed": 3,
+      "componentsCreated": 150,
+      "performanceImprovement": 45,
+      "bugReduction": 70,
+      "conversionIncrease": 25
+    },
+    "theme": {
+      "primaryColor": "#007ACC",
+      "secondaryColor": "#FF6B6B", 
+      "accentColor": "#4ECDC4",
+      "backgroundColor": "#0D1117",
+      "style": "frontend-focused"
+    }
+  }

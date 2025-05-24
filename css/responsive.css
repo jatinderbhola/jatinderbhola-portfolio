@@ -1,0 +1,903 @@
+/* Responsive Design - Cosmos Neural Theme */
+
+/* Extra Large Screens (1400px and up) */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    
+    .hero-title {
+        font-size: 7rem;
+    }
+    
+    .section-title {
+        font-size: 5rem;
+    }
+    
+    .skills-constellation {
+        height: 1000px;
+    }
+}
+
+/* Large Screens (992px to 1399px) */
+@media (max-width: 1399px) {
+    .container {
+        max-width: 1140px;
+    }
+    
+    .ai-hero {
+        grid-template-columns: 250px 1fr;
+        gap: 40px;
+    }
+    
+    .ai-brain-visual {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .brain-core {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Medium Screens (768px to 991px) */
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+        padding: 0 15px;
+    }
+    
+    /* Navigation */
+    .nav .container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .nav-links {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-item span {
+        display: none;
+    }
+    
+    .nav-item {
+        padding: 10px;
+        min-width: 44px;
+        justify-content: center;
+    }
+    
+    .profile-switcher {
+        order: -1;
+    }
+    
+    /* Sections */
+    .section {
+        padding: 80px 0 60px;
+    }
+    
+    .section-title {
+        font-size: 3rem;
+        margin-bottom: 60px;
+    }
+    
+    /* AI Showcase */
+    .ai-hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+    
+    .ai-brain-visual {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+    
+    .ai-hero-content {
+        padding-left: 0;
+    }
+    
+    .ai-title {
+        font-size: 2.5rem;
+    }
+    
+    .ai-initiatives-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+    
+    .ai-metrics-dashboard {
+        padding: 30px 20px;
+    }
+    
+    .metrics-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+    }
+    
+    /* Skills */
+    .skills-constellation {
+        height: 600px;
+    }
+    
+    .category-buttons {
+        gap: 10px;
+    }
+    
+    .category-btn {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+    
+    .category-btn span {
+        display: none;
+    }
+    
+    .skills-detail-view {
+        padding: 25px;
+    }
+    
+    .detail-stats {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    /* Experience */
+    .stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+    
+    .timeline-left .timeline-content,
+    .timeline-right .timeline-content {
+        margin-left: 70px;
+        margin-right: 0;
+        text-align: left;
+    }
+    
+    .timeline-marker {
+        left: 30px;
+        transform: none;
+    }
+    
+    .timeline-line {
+        left: 30px;
+        transform: none;
+    }
+    
+    .timeline-progress {
+        left: 0;
+    }
+    
+    .timeline-rocket {
+        left: 30px;
+        transform: translateX(-50%);
+    }
+    
+    /* Contact */
+    .contact-channels-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+    
+    .communication-hub {
+        transform: scale(0.9);
+        margin-bottom: 40px;
+    }
+}
+
+/* Small Screens (576px to 767px) */
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+        padding: 0 15px;
+    }
+    
+    /* Navigation */
+    .nav {
+        position: relative;
+        top: 0;
+        padding: 10px 0;
+    }
+    
+    .nav .container {
+        padding: 0 15px;
+    }
+    
+    .nav-brand {
+        font-size: 1.2rem;
+    }
+    
+    .nav-links {
+        gap: 15px;
+    }
+    
+    .nav-item {
+        padding: 8px;
+        font-size: 12px;
+    }
+    
+    .profile-select {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    
+    /* Hero */
+    .hero-section {
+        padding-top: 100px;
+    }
+    
+    .hero-avatar {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 30px;
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+    
+    /* Sections */
+    .section {
+        padding: 60px 0 40px;
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
+    
+    /* AI Showcase */
+    .ai-showcase-main {
+        margin-bottom: 40px;
+    }
+    
+    .ai-brain-visual {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .brain-core {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .ai-title {
+        font-size: 2rem;
+    }
+    
+    .ai-tagline {
+        font-size: 1.1rem;
+    }
+    
+    .ai-initiatives-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 40px 0;
+    }
+    
+    .ai-initiative-card {
+        padding: 25px 20px;
+    }
+    
+    .initiative-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .initiative-icon {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+    }
+    
+    .ai-metrics-dashboard {
+        padding: 25px 15px;
+    }
+    
+    .dashboard-title {
+        font-size: 1.5rem;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .metrics-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+    }
+    
+    .metric-card {
+        padding: 20px 15px;
+    }
+    
+    .metric-number {
+        font-size: 2rem;
+    }
+    
+    /* Skills */
+    .skills-constellation {
+        height: 500px;
+        margin: 40px 0;
+    }
+    
+    .center-core {
+        width: 80px;
+        height: 80px;
+        font-size: 0.7rem;
+    }
+    
+    .center-core i {
+        font-size: 1.2rem;
+    }
+    
+    .category-selector h4 {
+        font-size: 1.3rem;
+    }
+    
+    .category-buttons {
+        flex-direction: column;
+        gap: 8px;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    
+    .category-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 12px;
+    }
+    
+    .category-btn span {
+        display: inline;
+    }
+    
+    .skill-category-cluster {
+        transform: scale(0.8);
+    }
+    
+    .skill-core {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+    
+    .skills-detail-view {
+        padding: 20px 15px;
+    }
+    
+    .detail-header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .detail-stats {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .stat-number {
+        font-size: 1.5rem;
+    }
+    
+    .stat-label {
+        font-size: 0.8rem;
+    }
+    
+    /* Experience */
+    .timeline-stats {
+        margin-bottom: 40px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .stat-card {
+        padding: 20px;
+        gap: 15px;
+    }
+    
+    .stat-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .stat-number {
+        font-size: 1.8rem;
+    }
+    
+    .timeline-item {
+        margin-bottom: 60px;
+    }
+    
+    .timeline-left .timeline-content,
+    .timeline-right .timeline-content {
+        margin-left: 50px;
+    }
+    
+    .timeline-marker {
+        left: 20px;
+    }
+    
+    .timeline-line {
+        left: 20px;
+    }
+    
+    .timeline-rocket {
+        left: 20px;
+    }
+    
+    .timeline-card {
+        padding: 20px;
+    }
+    
+    .card-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .company-logo {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+    }
+    
+    .position {
+        font-size: 1.2rem;
+    }
+    
+    .card-highlights {
+        justify-content: center;
+        gap: 8px;
+    }
+    
+    .highlight-badge {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+    }
+    
+    .expand-btn {
+        width: 100%;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    
+    .tech-stack-items {
+        justify-content: center;
+    }
+    
+    .tech-item {
+        font-size: 0.7rem;
+        padding: 3px 8px;
+    }
+    
+    /* Contact */
+    .communication-hub {
+        transform: scale(0.8);
+        margin-bottom: 30px;
+    }
+    
+    .hub-core {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .hub-avatar {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .avatar-initial {
+        font-size: 2.5rem;
+    }
+    
+    .contact-channels-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .contact-channel-card {
+        padding: 20px;
+    }
+    
+    .channel-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .channel-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+        margin: 0 auto;
+    }
+    
+    .channel-name {
+        font-size: 1.2rem;
+    }
+    
+    .channel-footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .channel-connect-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Contact Form */
+    .contact-form-section {
+        padding: 25px 15px;
+    }
+    
+    .form-header h3 {
+        font-size: 1.5rem;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    .form-group label {
+        font-size: 0.9rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 12px;
+        font-size: 14px;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .submit-btn,
+    .clear-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Status Indicators */
+    .status-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 15px;
+    }
+    
+    .status-item {
+        text-align: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .status-icon {
+        margin: 0 auto 10px;
+    }
+    
+    .status-label,
+    .status-value {
+        font-size: 0.8rem;
+    }
+    
+    /* Social Proof */
+    .proof-stats {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .proof-stat {
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .stat-value {
+        font-size: 1.8rem;
+    }
+    
+    .collab-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .collab-item {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+/* Extra Small Screens (up to 575px) */
+@media (max-width: 575px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    
+    /* Hero */
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-description {
+        font-size: 0.9rem;
+    }
+    
+    /* Section Titles */
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    /* AI Showcase */
+    .ai-title {
+        font-size: 1.8rem;
+    }
+    
+    .ai-brain-visual {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .brain-core {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .ai-initiative-card {
+        padding: 20px 15px;
+    }
+    
+    .initiative-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .initiative-name {
+        font-size: 1.1rem;
+    }
+    
+    /* Skills */
+    .skills-constellation {
+        height: 400px;
+    }
+    
+    .center-core {
+        width: 60px;
+        height: 60px;
+        font-size: 0.6rem;
+    }
+    
+    .center-core i {
+        font-size: 1rem;
+    }
+    
+    /* Experience */
+    .timeline-card {
+        padding: 15px;
+    }
+    
+    .position {
+        font-size: 1.1rem;
+    }
+    
+    .company {
+        font-size: 1rem;
+    }
+    
+    /* Contact */
+    .communication-hub {
+        transform: scale(0.7);
+    }
+    
+    .channel-name {
+        font-size: 1.1rem;
+    }
+    
+    .channel-description {
+        font-size: 0.8rem;
+    }
+    
+    /* Modals */
+    .modal-content {
+        margin: 20px;
+        padding: 20px;
+        max-height: calc(100vh - 40px);
+        overflow-y: auto;
+    }
+    
+    .modal-header h3 {
+        font-size: 1.3rem;
+    }
+    
+    /* Form Elements */
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Landscape Mobile Optimization */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero-section {
+        min-height: auto;
+        padding: 60px 0;
+    }
+    
+    .hero-avatar {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+    
+    .hero-description {
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+    }
+    
+    .section {
+        padding: 40px 0 30px;
+    }
+    
+    .skills-constellation {
+        height: 300px;
+    }
+}
+
+/* High DPI Display Optimization */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Optimize for retina displays */
+    .hero-title,
+    .section-title {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .skill-core,
+    .btn,
+    .nav-item {
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+/* Print Styles */
+@media print {
+    * {
+        color: black !important;
+        background: white !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    
+    .nav,
+    .theme-switcher,
+    .cta-buttons,
+    .contact-form-section,
+    #cosmos-background {
+        display: none !important;
+    }
+    
+    .section {
+        page-break-inside: avoid;
+        margin-bottom: 30px;
+    }
+    
+    .timeline-item {
+        page-break-inside: avoid;
+        margin-bottom: 20px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .floating,
+    .brain-pulse,
+    .signal-transmitting,
+    .neural-pulse {
+        animation: none !important;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --neural-cyan: #00FFFF;
+        --neural-pink: #FF0080;
+        --neural-purple: #8000FF;
+        --text-primary: #FFFFFF;
+        --cosmos-deep: #000000;
+    }
+    
+    .btn,
+    .nav-item,
+    .skill-core,
+    .timeline-card {
+        border: 2px solid currentColor;
+    }
+}
+
+/* Focus Improvements for Keyboard Navigation */
+@media (prefers-reduced-motion: no-preference) {
+    .btn:focus,
+    .nav-item:focus,
+    .skill-node:focus,
+    .contact-channel-card:focus {
+        outline: 3px solid var(--neural-cyan);
+        outline-offset: 2px;
+    }
+}
