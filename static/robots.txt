@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+// TODO: docs: add this steps in the docs steps
+Sitemap: https://jatinderbhola.com/sitemap.xml 
