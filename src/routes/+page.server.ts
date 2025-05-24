@@ -1,17 +1,18 @@
+import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
-import type { Resume } from '$lib/types/resume';
+import { getAvatarUrl, getAvatarFallback } from '$lib/utils/avatar';
 
-export const load: PageServerLoad = async ({ fetch, url }) => {
+export const load: PageServerLoad = async ({ url }) => {
+  const lang = url.searchParams.get('lang') || 'en';
+  const profile = url.searchParams.get('profile') || 'default';
+
   try {
-    // Get profile from URL query parameter, default to 'default'
-    const profile = url.searchParams.get('profile') || 'default';
-    const response = await fetch(`/profiles/${profile}.json`);
-    
-    if (!response.ok) {
-      throw new Error(`Failed to load resume: ${response.statusText}`);
-    }
-    
-    const resume: Resume = await response.json();
+    const resumeData = await import(`$lib/data/profiles/${profile}-resume.json`);
+    const resume = resumeData.default;
+
+    // Generate avatar URL if not provided
+    const avatarUrl = resume.personalInfo.avatar || 
+      getAvatarUrl(resume.personalInfo.name, resume.personalInfo.title);
 
     // Generate structured data for SEO
     const structuredData = {
@@ -20,41 +21,35 @@ export const load: PageServerLoad = async ({ fetch, url }) => {
       name: resume.personalInfo.name,
       jobTitle: resume.personalInfo.title,
       description: resume.summary,
-      email: resume.personalInfo.email,
-      telephone: resume.personalInfo.phone,
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: resume.personalInfo.location
-      },
+      image: avatarUrl,
       sameAs: [
         resume.personalInfo.linkedin,
         resume.personalInfo.github
-      ],
-      worksFor: resume.experience.map(exp => ({
+      ].filter(Boolean),
+      worksFor: {
         '@type': 'Organization',
-        name: exp.company,
-        position: exp.position,
-        startDate: exp.duration.split(' - ')[0],
-        endDate: exp.duration.split(' - ')[1] === 'Present' ? new Date().toISOString() : exp.duration.split(' - ')[1]
-      })),
-      alumniOf: resume.education.map(edu => ({
+        name: resume.experience[0].company
+      },
+      alumniOf: resume.education.map((edu: { institution: string }) => ({
         '@type': 'EducationalOrganization',
-        name: edu.institution,
-        degree: edu.degree
+        name: edu.institution
       }))
     };
 
     return {
-      resume,
-      structuredData: JSON.stringify(structuredData),
+      resume: {
+        ...resume,
+        personalInfo: {
+          ...resume.personalInfo,
+          avatar: avatarUrl
+        }
+      },
+      structuredData,
+      currentLanguage: lang,
       currentProfile: profile
     };
-  } catch (error) {
-    console.error('Error loading resume:', error);
-    return {
-      resume: null,
-      structuredData: null,
-      currentProfile: 'default'
-    };
+  } catch (e) {
+    console.error('Error loading resume:', e);
+    throw error(404, 'Resume not found');
   }
 }; 

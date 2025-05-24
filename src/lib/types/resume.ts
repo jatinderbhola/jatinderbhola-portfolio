@@ -15,21 +15,25 @@ export interface SeoTags {
 export interface PersonalInfo {
   name: string;
   title: string;
-  subtitle: string;
-  location: string;
-  phone: string;
   email: string;
-  linkedin: string;
-  github: string;
+  phone: string;
+  location: string;
+  avatar: string;
+  socialLinks: Array<{
+    platform: string;
+    url: string;
+  }>;
+}
+
+export interface Initiative {
+  name: string;
+  description: string;
 }
 
 export interface LatestAiProduct {
   title: string;
   description: string;
-  initiatives: {
-    name: string;
-    description: string;
-  }[];
+  initiatives: Initiative[];
   impact: string;
 }
 
@@ -69,8 +73,8 @@ export interface TechnicalSkills {
 }
 
 export interface Experience {
-  position: string;
   company: string;
+  position: string;
   location: string;
   duration: string;
   achievements: string[];
@@ -78,8 +82,8 @@ export interface Experience {
 }
 
 export interface Education {
-  degree: string;
   institution: string;
+  degree: string;
   location: string;
   duration: string;
 }
@@ -93,12 +97,14 @@ export interface ImpactSummary {
 }
 
 export interface Resume {
-  seoTags: SeoTags;
+  seoTags: {
+    technicalSkills: string[];
+  };
   personalInfo: PersonalInfo;
   summary: string;
   latestAiProduct: LatestAiProduct;
-  coreCompetencies: CoreCompetencies;
-  technicalSkills: TechnicalSkills;
+  coreCompetencies: string[];
+  technicalSkills: string[];
   experience: Experience[];
   education: Education[];
   impactSummary: ImpactSummary;

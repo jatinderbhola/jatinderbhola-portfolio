@@ -1,13 +1,16 @@
 import type { Handle } from '@sveltejs/kit';
-import { paraglideMiddleware } from '$lib/paraglide/server';
 
-const handleParaglide: Handle = ({ event, resolve }) =>
-	paraglideMiddleware(event.request, ({ request, locale }) => {
-		event.request = request;
+export const handle: Handle = async ({ event, resolve }) => {
+	// Skip middleware for devtools requests
+	if (event.url.pathname.startsWith('/.well-known/appspecific/')) {
+		return new Response('Not Found', { status: 404 });
+	}
 
-		return resolve(event, {
-			transformPageChunk: ({ html }) => html.replace('%paraglide.lang%', locale)
-		});
-	});
+	// Get language from URL or default to 'en'
+	const lang = event.url.searchParams.get('lang') || 'en';
+	
+	// Set the language in the request context
+	event.locals.lang = lang;
 
-export const handle: Handle = handleParaglide;
+	return resolve(event);
+};

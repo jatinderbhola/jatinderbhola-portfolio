@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "experience": "Expérience",
+    "education": "Formation",
+    "contact": "Contact",
+    "portfolio": "Portefeuille"
+  },
+  "sections": {
+    "professionalSummary": "Résumé Professionnel",
+    "latestAiProduct": "Dernier Produit IA",
+    "experience": "Expérience",
+    "education": "Formation",
+    "impactSummary": "Résumé de l'Impact"
+  },
+  "common": {
+    "present": "Présent",
+    "location": "Lieu",
+    "duration": "Durée",
+    "achievements": "Réalisations",
+    "technologies": "Technologies",
+    "readMore": "Lire plus",
+    "readLess": "Lire moins",
+    "contact": "Contact"
+  },
+  "impact": {
+    "revenueImpact": "Impact sur les Revenus",
+    "teamPerformance": "Performance de l'Équipe",
+    "systemReliability": "Fiabilité du Système",
+    "developerProductivity": "Productivité des Développeurs",
+    "scalability": "Évolutivité"
+  }
+} 
