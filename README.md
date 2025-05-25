@@ -1,6 +1,6 @@
-# Modern Portfolio Template
+# Jatinder Bhola Portfolio
 
-A modern, performant, and accessible portfolio website built with SvelteKit. This template allows you to create a beautiful portfolio using a JSON-based resume format.
+This is an open-source portfolio project built with SvelteKit. Feel free to clone, modify, and deploy it for your own use!
 
 ## Features
 
@@ -49,5 +49,38 @@ The template includes built-in support for multiple languages:
 
 ## Getting Started
 
-1. Clone this repository:
-```
+### Prerequisites
+- Node.js (v16 or later)
+- npm or yarn
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/jatinderbhola/jatinderbhola-portfolio.git
+   cd jatinderbhola-portfolio
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+   The site will be available at [http://localhost:5173](http://localhost:5173).
+
+### Customization
+- Update `default-resume.json` with your personal information.
+- Modify the components in `src/lib/components` to suit your needs.
+
+## Deployment to Vercel
+This project is configured for easy deployment on Vercel:
+
+1. Push your changes to a GitHub repository.
+2. Go to [Vercel](https://vercel.com) and sign in with your GitHub account.
+3. Click "New Project" and select your repository.
+4. Vercel will automatically detect the SvelteKit project and deploy it for free.
+
+## License
+This project is open source and available under the MIT License.
+
