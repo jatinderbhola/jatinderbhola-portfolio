@@ -19,7 +19,14 @@
 
   async function switchLanguage(lang: Language) {
     currentLanguage.set(lang);
-    await goto(`?lang=${lang}`, {
+    const url = new URL(window.location.href);
+    url.searchParams.set('lang', lang);
+    // Preserve the current profile if it exists
+    const currentProfile = url.searchParams.get('profile');
+    if (currentProfile) {
+      url.searchParams.set('profile', currentProfile);
+    }
+    await goto(url.toString(), {
       replaceState: true,
       keepFocus: true,
       noScroll: true
