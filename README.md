@@ -7,10 +7,30 @@
 [![Built with AI](https://img.shields.io/badge/Built%20with%20AI-00A67E?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/jatinderbhola)
 
+This is an open-source portfolio project built with SvelteKit. Feel free to clone, modify, and deploy it for your own use!
+
+## ⭐ Support & Feedback
+
+If you find this project useful or interesting:
+
+<div align="center">
+
+### Show Your Support
+
+⭐ Star this repository to show your appreciation and help others discover it! ⭐
+
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/j_bhola)
 
+</div>
 
-This is an open-source portfolio project built with SvelteKit. Feel free to clone, modify, and deploy it for your own use!
+> Your support motivates me to create more open-source AI projects and educational content. Every star makes a difference and helps this project reach more developers interested in AI and NLP.
+
+<div align="center">
+
+[![Stargazers](https://img.shields.io/github/stars/jatinderbhola/jatinderbhola-portfolio?style=for-the-badge)](https://github.com/jatinderbhola/jatinderbhola-portfolio/stargazers)
+[![Forks](https://img.shields.io/github/forks/jatinderbhola/jatinderbhola-portfolio?style=for-the-badge)](https://github.com/jatinderbhola/jatinderbhola-portfolio/network/members)
+
+</div>
 
 ## Features
 
