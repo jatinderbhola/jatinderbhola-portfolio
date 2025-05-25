@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "home": "होम",
+    "about": "जानकारी",
+    "experience": "अनुभव",
+    "education": "शिक्षा",
+    "contact": "संपर्क",
+    "portfolio": "पोर्टफोलियो"
+  },
+  "sections": {
+    "professionalSummary": "पेशेवर सारांश",
+    "latestAiProduct": "नवीनतम AI उत्पाद",
+    "experience": "अनुभव",
+    "education": "शिक्षा",
+    "impactSummary": "प्रभाव सारांश"
+  },
+  "common": {
+    "present": "वर्तमान",
+    "location": "स्थान",
+    "duration": "अवधि",
+    "achievements": "उपलब्धियां",
+    "technologies": "तकनीकें",
+    "readMore": "और पढ़ें",
+    "readLess": "कम पढ़ें",
+    "contact": "संपर्क"
+  },
+  "impact": {
+    "revenueImpact": "राजस्व प्रभाव",
+    "teamPerformance": "टीम प्रदर्शन",
+    "systemReliability": "सिस्टम विश्वसनीयता",
+    "developerProductivity": "डेवलपर उत्पादकता",
+    "scalability": "मापनीयता"
+  }
+} 

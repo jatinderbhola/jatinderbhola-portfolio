@@ -6,6 +6,8 @@ import type { Language } from './config';
 // Create a store for translations to make them reactive
 export const translationsStore = writable<Record<Language, any>>({
   en: {},
+  zh: {},
+  hi: {},
   fr: {},
   es: {}
 });
@@ -66,6 +68,8 @@ export async function initializeTranslations() {
   try {
     await Promise.all([
       loadTranslations('en'),
+      loadTranslations('zh'),
+      loadTranslations('hi'),
       loadTranslations('fr'),
       loadTranslations('es')
     ]);

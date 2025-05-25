@@ -6,6 +6,20 @@ export const languages = {
     dateFormat: 'MM/DD/YYYY',
     timeFormat: 'HH:mm'
   },
+  zh: {
+    name: 'Chinese',
+    nativeName: '中文',
+    direction: 'ltr',
+    dateFormat: 'YYYY/MM/DD',
+    timeFormat: 'HH:mm'
+  },
+  hi: {
+    name: 'Hindi',
+    nativeName: 'हिन्दी',
+    direction: 'ltr',
+    dateFormat: 'DD/MM/YYYY',
+    timeFormat: 'HH:mm'
+  },
   fr: {
     name: 'French',
     nativeName: 'Français',
@@ -36,6 +50,20 @@ export const languageMetadata = {
     direction: 'ltr',
     dateFormat: 'MM/DD/YYYY',
     timeFormat: 'hh:mm A'
+  },
+  zh: {
+    name: 'Chinese',
+    nativeName: '中文',
+    direction: 'ltr',
+    dateFormat: 'YYYY/MM/DD',
+    timeFormat: 'HH:mm'
+  },
+  hi: {
+    name: 'Hindi',
+    nativeName: 'हिन्दी',
+    direction: 'ltr',
+    dateFormat: 'DD/MM/YYYY',
+    timeFormat: 'HH:mm'
   },
   fr: {
     name: 'French',
