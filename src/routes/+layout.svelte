@@ -5,6 +5,7 @@
 	import ProfileSwitcher from '$lib/components/layout/ProfileSwitcher.svelte';
 	import { initializeTranslations, t, translationsStore } from '$lib/i18n/utils';
 	import { currentLanguage } from '$lib/i18n/store';
+	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 
 	let isLoading = true;
 
@@ -16,14 +17,9 @@
 			console.error('Failed to initialize translations:', e);
 			isLoading = false;
 		}
-		// Dynamically import and inject Vercel analytics and speed insights
-		try {
-			// @ts-expect-error Vercel package is not a module
-			const speedInsights = await import('@vercel/speed-insights');
-			if (typeof speedInsights.inject === 'function') speedInsights.inject();
-		} catch (e) {
-			console.warn('Speed Insights not loaded:', e);
-		}
+		// Call the SvelteKit-specific injectSpeedInsights function
+		injectSpeedInsights();
+		// Dynamically import and inject Vercel analytics
 		try {
 			// @ts-expect-error Vercel package is not a module
 			const analytics = await import('@vercel/analytics');

@@ -7,6 +7,9 @@
 [![Built with AI](https://img.shields.io/badge/Built%20with%20AI-00A67E?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/jatinderbhola)
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/j_bhola)
+
+
 This is an open-source portfolio project built with SvelteKit. Feel free to clone, modify, and deploy it for your own use!
 
 ## Features
@@ -90,4 +93,12 @@ This project is configured for easy deployment on Vercel:
 
 ## License
 This project is open source and available under the MIT License.
+
+## Support
+
+If you find this project helpful and would like to support my work, you can buy me a coffee!
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/j_bhola)
+
+Thank you for your support! 🙏
 
