@@ -1,5 +1,12 @@
 # Jatinder Bhola Portfolio
 
+[![SvelteKit](https://img.shields.io/badge/SvelteKit-FF3E00?style=for-the-badge&logo=svelte&logoColor=white)](https://svelte.dev)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com)
+[![Built with AI](https://img.shields.io/badge/Built%20with%20AI-00A67E?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/jatinderbhola)
+
 This is an open-source portfolio project built with SvelteKit. Feel free to clone, modify, and deploy it for your own use!
 
 ## Features

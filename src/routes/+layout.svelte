@@ -16,6 +16,21 @@
 			console.error('Failed to initialize translations:', e);
 			isLoading = false;
 		}
+		// Dynamically import and inject Vercel analytics and speed insights
+		try {
+			// @ts-expect-error Vercel package is not a module
+			const speedInsights = await import('@vercel/speed-insights');
+			if (typeof speedInsights.inject === 'function') speedInsights.inject();
+		} catch (e) {
+			console.warn('Speed Insights not loaded:', e);
+		}
+		try {
+			// @ts-expect-error Vercel package is not a module
+			const analytics = await import('@vercel/analytics');
+			if (typeof analytics.inject === 'function') analytics.inject();
+		} catch (e) {
+			console.warn('Analytics not loaded:', e);
+		}
 	});
 
 	// Subscribe to both language and translations changes
