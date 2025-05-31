@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import { onMount } from 'svelte';
+	import { page } from '$app/stores';
 	import LanguageSwitcher from '$lib/components/layout/LanguageSwitcher.svelte';
 	import ProfileSwitcher from '$lib/components/layout/ProfileSwitcher.svelte';
 	import { initializeTranslations, t, translationsStore } from '$lib/i18n/utils';
@@ -21,7 +22,6 @@
 		injectSpeedInsights();
 		// Dynamically import and inject Vercel analytics
 		try {
-			// @ts-expect-error Vercel package is not a module
 			const analytics = await import('@vercel/analytics');
 			if (typeof analytics.inject === 'function') analytics.inject();
 		} catch (e) {
@@ -32,29 +32,39 @@
 	// Subscribe to both language and translations changes
 	$: currentLang = $currentLanguage;
 	$: translations = $translationsStore;
+	$: isInterviewPatternsPage = $page.url.pathname === '/interview-patterns';
 </script>
 
 <div class="min-h-screen bg-gray-50">
 	<header class="bg-white shadow">
-		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-			<div class="flex justify-between items-center py-4">
+		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+			<div class="flex items-center justify-between py-4">
 				<h1 class="text-2xl font-bold text-gray-900">
 					{#if isLoading}
 						<span>Loading...</span>
 					{:else}
-						<a href="/" class="hover:text-indigo-600 transition-colors duration-200">{t('nav.portfolio')}</a>
+						<a href="/" class="transition-colors duration-200 hover:text-indigo-600"
+							>{t('nav.portfolio')}</a
+						>
 					{/if}
 				</h1>
 				<nav class="flex items-center space-x-4" aria-label="Site navigation">
-					<ProfileSwitcher />
-					<LanguageSwitcher />
+					{#if !isInterviewPatternsPage}
+						<ProfileSwitcher />
+						<LanguageSwitcher />
+						<a
+							href="/interview-patterns"
+							class="text-gray-600 transition-colors duration-200 hover:text-indigo-600"
+							>Interview Patterns</a
+						>
+					{/if}
 				</nav>
 			</div>
 		</div>
 	</header>
 
 	<main class="flex-grow">
-		<div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+		<div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
 			{#if isLoading}
 				<div class="text-center">Loading translations...</div>
 			{:else}
@@ -63,4 +73,3 @@
 		</div>
 	</main>
 </div>
-
