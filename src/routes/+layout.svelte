@@ -9,10 +9,13 @@
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 
 	let isLoading = true;
+	$: isInterviewPatternsPage = $page.url.pathname === '/interview-patterns';
 
 	onMount(async () => {
 		try {
-			await initializeTranslations();
+			if (!isInterviewPatternsPage) {
+				await initializeTranslations();
+			}
 			isLoading = false;
 		} catch (e) {
 			console.error('Failed to initialize translations:', e);
@@ -32,7 +35,6 @@
 	// Subscribe to both language and translations changes
 	$: currentLang = $currentLanguage;
 	$: translations = $translationsStore;
-	$: isInterviewPatternsPage = $page.url.pathname === '/interview-patterns';
 </script>
 
 <div class="min-h-screen bg-gray-50">
@@ -40,23 +42,23 @@
 		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 			<div class="flex items-center justify-between py-4">
 				<h1 class="text-2xl font-bold text-gray-900">
-					{#if isLoading}
+					{#if isLoading && !isInterviewPatternsPage}
 						<span>Loading...</span>
 					{:else}
 						<a href="/" class="transition-colors duration-200 hover:text-indigo-600"
-							>{t('nav.portfolio')}</a
+							>{isInterviewPatternsPage ? 'Portfolio' : t('nav.portfolio')}</a
 						>
 					{/if}
 				</h1>
 				<nav class="flex items-center space-x-4" aria-label="Site navigation">
+					<a
+						href="/interview-patterns"
+						class="text-gray-600 transition-colors duration-200 hover:text-indigo-600"
+						>Interview Patterns</a
+					>
 					{#if !isInterviewPatternsPage}
 						<ProfileSwitcher />
 						<LanguageSwitcher />
-						<a
-							href="/interview-patterns"
-							class="text-gray-600 transition-colors duration-200 hover:text-indigo-600"
-							>Interview Patterns</a
-						>
 					{/if}
 				</nav>
 			</div>
@@ -65,7 +67,7 @@
 
 	<main class="flex-grow">
 		<div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-			{#if isLoading}
+			{#if isLoading && !isInterviewPatternsPage}
 				<div class="text-center">Loading translations...</div>
 			{:else}
 				<slot />

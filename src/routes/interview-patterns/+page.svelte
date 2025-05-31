@@ -14,6 +14,30 @@
 
 <svelte:head>
 	<title>Technical Interview Patterns</title>
+	<meta
+		name="description"
+		content="Quick Reference Guide for Coding Interviews. Explore common coding interview patterns, when to use them, and example problems."
+	/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.jatinderbhola.com/interview-patterns" />
+	<meta property="og:title" content="Technical Interview Patterns" />
+	<meta
+		property="og:description"
+		content="Quick Reference Guide for Coding Interviews. Explore common coding interview patterns, when to use them, and example problems."
+	/>
+	<meta property="og:image" content="/og/technical_interview_patterns.png" />
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://www.jatinderbhola.com/interview-patterns" />
+	<meta property="twitter:title" content="Technical Interview Patterns" />
+	<meta
+		property="twitter:description"
+		content="Quick Reference Guide for Coding Interviews. Explore common coding interview patterns, when to use them, and example problems."
+	/>
+	<meta property="twitter:image" content="/og/technical_interview_patterns.png" />
 </svelte:head>
 
 <div class="container mx-auto px-4 py-8">
