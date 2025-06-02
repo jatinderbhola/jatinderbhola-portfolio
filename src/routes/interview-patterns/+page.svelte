@@ -18,6 +18,17 @@
 		name="description"
 		content="Quick Reference Guide for Coding Interviews. Explore common coding interview patterns, when to use them, and example problems."
 	/>
+	<meta name="robots" content="index, follow" />
+	<link rel="canonical" href="https://www.jatinderbhola.com/interview-patterns" />
+
+	<!-- Favicons and Manifest -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png" />
+	<link rel="manifest" href="/favicon_io/site.webmanifest" />
+	<link rel="icon" type="image/x-icon" href="/favicon_io/favicon.ico" />
+	<link rel="icon" type="image/png" sizes="192x192" href="/favicon_io/android-chrome-192x192.png" />
+	<link rel="icon" type="image/png" sizes="512x512" href="/favicon_io/android-chrome-512x512.png" />
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
@@ -27,7 +38,10 @@
 		property="og:description"
 		content="Quick Reference Guide for Coding Interviews. Explore common coding interview patterns, when to use them, and example problems."
 	/>
-	<meta property="og:image" content="/og/technical_interview_patterns.png" />
+	<meta
+		property="og:image"
+		content="https://www.jatinderbhola.com/og/technical_interview_patterns.png"
+	/>
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
@@ -37,7 +51,10 @@
 		property="twitter:description"
 		content="Quick Reference Guide for Coding Interviews. Explore common coding interview patterns, when to use them, and example problems."
 	/>
-	<meta property="twitter:image" content="/og/technical_interview_patterns.png" />
+	<meta
+		property="twitter:image"
+		content="https://www.jatinderbhola.com/og/technical_interview_patterns.png"
+	/>
 </svelte:head>
 
 <div class="container mx-auto px-4 py-8">
