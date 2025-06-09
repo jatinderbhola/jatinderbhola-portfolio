@@ -52,6 +52,12 @@
 				</h1>
 				<nav class="flex items-center space-x-4" aria-label="Site navigation">
 					<a
+						href="https://blog.jatinderbhola.com?utm_source=portfolio&utm_medium=referral"
+						class="text-gray-600 transition-colors duration-200 hover:text-indigo-600"
+						target="_blank"
+						rel="noopener noreferrer">Blog</a
+					>
+					<a
 						href="/interview-patterns"
 						class="text-gray-600 transition-colors duration-200 hover:text-indigo-600"
 						>Interview Patterns</a
