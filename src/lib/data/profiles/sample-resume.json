@@ -1,219 +1,173 @@
 {
-  "seoTags": {
-    "leadership": [
-      "team leadership",
-      "technical lead",
-      "agile leadership",
-      "mentorship",
-      "cross-functional collaboration"
-    ],
-    "technicalSkills": [
-      "typescript",
-      "react",
-      "node.js",
-      "aws",
-      "docker",
-      "kubernetes"
-    ],
-    "cloudDevOps": [
-      "aws",
-      "docker",
-      "kubernetes",
-      "ci/cd",
-      "terraform"
-    ],
-    "databases": [
-      "postgresql",
-      "mongodb",
-      "redis"
-    ],
-    "aiMachineLearning": [
-      "github copilot",
-      "ai-driven development",
-      "ml ops"
-    ],
-    "testing": [
-      "jest",
-      "cypress",
-      "playwright",
-      "tdd"
-    ],
-    "businessImpact": [
-      "revenue generation",
-      "cost reduction",
-      "performance improvement"
-    ],
-    "industries": [
-      "e-commerce",
-      "fintech",
-      "healthcare"
-    ],
-    "methodologies": [
-      "agile",
-      "scrum",
-      "kanban"
-    ],
-    "softSkills": [
-      "communication",
-      "problem solving",
-      "team collaboration"
-    ],
-    "location": [
-      "toronto",
-      "remote work",
-      "hybrid work"
-    ]
-  },
-  "personalInfo": {
-    "name": "Jane Smith",
-    "title": "Senior Software Engineer",
-    "subtitle": "Full Stack · Cloud Native · Team Lead",
-    "location": "Toronto, ON, Canada",
-    "phone": "+1 416 555 0123",
-    "email": "jane.smith@example.com",
-    "linkedin": "https://linkedin.com/in/janesmith",
-    "github": "https://github.com/janesmith"
-  },
-  "summary": "Innovative Senior Software Engineer with 8+ years of experience in building scalable cloud-native applications. Proven track record in leading development teams and delivering high-impact solutions. Expert in TypeScript, React, and cloud technologies. Passionate about mentoring junior developers and driving technical excellence.",
-  "latestAiProduct": {
-    "title": "AI-Enhanced Development Workflow",
-    "description": "Leading the implementation of AI tools to streamline development processes and improve code quality",
-    "initiatives": [
-      {
-        "name": "AI Code Assistant Integration",
-        "description": "Implemented GitHub Copilot across the team, resulting in 40% faster development cycles"
-      },
-      {
-        "name": "Automated Code Review System",
-        "description": "Developed an AI-powered code review system that reduced review time by 50%"
-      },
-      {
-        "name": "Smart Documentation Generator",
-        "description": "Created an AI tool that automatically generates and updates technical documentation"
-      }
-    ],
-    "impact": "These initiatives have led to a 35% increase in team productivity and 45% reduction in documentation-related issues."
-  },
-  "coreCompetencies": {
-    "leadership": [
-      "Technical Team Leadership",
-      "Agile Project Management",
-      "Mentorship & Coaching",
-      "Cross-functional Collaboration"
-    ],
-    "technical": [
-      "Cloud Architecture",
-      "System Design",
-      "Performance Optimization",
-      "Security Best Practices"
-    ]
-  },
-  "technicalSkills": {
-    "cloudDevOps": {
-      "aws": ["EC2", "Lambda", "S3", "RDS"],
-      "gcp": ["Cloud Functions", "Cloud Run"],
-      "tools": ["Docker", "Kubernetes", "Terraform", "Jenkins"]
-    },
-    "backendApis": {
-      "languages": ["TypeScript", "Node.js", "Python"],
-      "architecture": ["REST", "GraphQL", "Microservices"],
-      "practices": ["TDD", "Clean Code", "SOLID Principles"]
-    },
-    "frontend": {
-      "frameworks": ["React", "Next.js", "Vue.js"],
-      "tools": ["TailwindCSS", "Storybook", "Jest"]
-    },
-    "testingObservability": {
-      "testing": ["Jest", "Cypress", "Playwright"],
-      "monitoring": ["Datadog", "Prometheus", "Grafana"]
-    },
-    "databases": {
-      "sql": ["PostgreSQL", "MySQL"],
-      "nosql": ["MongoDB", "Redis"]
-    },
-    "developmentTools": {
-      "versionControl": ["Git", "GitHub Actions"],
-      "cicd": ["Jenkins", "CircleCI"],
-      "others": ["VS Code", "Postman", "Docker Desktop"]
-    }
-  },
-  "experience": [
-    {
-      "position": "Senior Software Engineer",
-      "company": "TechCorp Inc.",
-      "location": "Toronto, ON",
-      "duration": "January 2021 - Present",
-      "achievements": [
-        "Led a team of 5 developers in building a cloud-native e-commerce platform",
-        "Reduced system response time by 60% through optimization and caching strategies",
-        "Implemented CI/CD pipelines that reduced deployment time by 75%",
-        "Mentored 3 junior developers who were promoted within 12 months"
-      ],
-      "techStack": [
-        "TypeScript",
-        "React",
-        "Node.js",
-        "AWS",
-        "Docker",
-        "Kubernetes",
-        "Redis",
-        "CI/CD",
-        "Microservices",
-        "REST APIs",
-        "GraphQL",
-        "MongoDB",
-        "PostgreSQL",
-        "Jest",
-        "Cypress"
-      ]
-    },
-    {
-      "position": "Software Engineer",
-      "company": "FinTech Solutions",
-      "location": "Toronto, ON",
-      "duration": "June 2018 - December 2020",
-      "achievements": [
-        "Developed and maintained microservices handling $1M+ daily transactions",
-        "Implemented automated testing that increased code coverage to 85%",
-        "Reduced system downtime by 40% through improved error handling"
-      ],
-      "techStack": [
-        "JavaScript",
-        "Vue.js",
-        "Python",
-        "PostgreSQL",
-        "Docker",
-        "Kubernetes",
-        "Microservices",
-        "REST APIs",
-        "Jest",
-        "Cypress",
-        "CI/CD",
-        "AWS",
-        "Redis",
-        "MongoDB"
-      ]
-    }
-  ],
-  "education": [
-    {
-      "degree": "Master of Computer Science",
-      "institution": "University of Toronto",
-      "location": "Toronto, ON",
-      "duration": "2016 - 2018"
-    },
-    {
-      "degree": "Bachelor of Computer Science",
-      "institution": "University of Waterloo",
-      "location": "Waterloo, ON",
-      "duration": "2012 - 2016"
-    }
-  ],
-  "impactSummary": {
-    "revenueImpact": "Generated $2M+ in additional revenue through platform optimization",
-    "teamPerformance": "Improved team velocity by 45% through process improvements",
-    "systemReliability": "Achieved 99.99% uptime for critical services",
-    "developerProductivity": "Reduced development cycle time by 35%",
-    "scalability": "Successfully handled 3x traffic increase during peak periods"
-  }
-} 
+	"seoTags": {
+		"leadership": [
+			"team leadership",
+			"technical lead",
+			"agile leadership",
+			"mentorship",
+			"cross-functional collaboration"
+		],
+		"technicalSkills": ["typescript", "react", "node.js", "aws", "docker", "kubernetes"],
+		"cloudDevOps": ["aws", "docker", "kubernetes", "ci/cd", "terraform"],
+		"databases": ["postgresql", "mongodb", "redis"],
+		"aiMachineLearning": ["github copilot", "ai-driven development", "ml ops"],
+		"testing": ["jest", "cypress", "playwright", "tdd"],
+		"businessImpact": ["revenue generation", "cost reduction", "performance improvement"],
+		"industries": ["e-commerce", "fintech", "healthcare"],
+		"methodologies": ["agile", "scrum", "kanban"],
+		"softSkills": ["communication", "problem solving", "team collaboration"],
+		"location": ["toronto", "remote work", "hybrid work"]
+	},
+	"personalInfo": {
+		"name": "Jane Smith",
+		"title": "Senior Software Engineer",
+		"subtitle": "Full Stack · Cloud Native · Team Lead",
+		"location": "Toronto, ON, Canada",
+		"phone": "+1 416 555 0123",
+		"email": "jane.smith@example.com",
+		"linkedin": "https://linkedin.com/in/janesmith",
+		"github": "https://github.com/janesmith"
+	},
+	"summary": "Innovative Senior Software Engineer with 8+ years of experience in building scalable cloud-native applications. Proven track record in leading development teams and delivering high-impact solutions. Expert in TypeScript, React, and cloud technologies. Passionate about mentoring junior developers and driving technical excellence.",
+	"latestAiProduct": {
+		"title": "AI-Enhanced Development Workflow",
+		"description": "Leading the implementation of AI tools to streamline development processes and improve code quality",
+		"initiatives": [
+			{
+				"name": "AI Code Assistant Integration",
+				"description": "Implemented GitHub Copilot across the team, resulting in 40% faster development cycles"
+			},
+			{
+				"name": "Automated Code Review System",
+				"description": "Developed an AI-powered code review system that reduced review time by 50%"
+			},
+			{
+				"name": "Smart Documentation Generator",
+				"description": "Created an AI tool that automatically generates and updates technical documentation"
+			}
+		],
+		"impact": "These initiatives have led to a 35% increase in team productivity and 45% reduction in documentation-related issues."
+	},
+	"coreCompetencies": {
+		"leadership": [
+			"Technical Team Leadership",
+			"Agile Project Management",
+			"Mentorship & Coaching",
+			"Cross-functional Collaboration"
+		],
+		"technical": [
+			"Cloud Architecture",
+			"System Design",
+			"Performance Optimization",
+			"Security Best Practices"
+		]
+	},
+	"technicalSkills": {
+		"cloudDevOps": {
+			"aws": ["EC2", "Lambda", "S3", "RDS"],
+			"gcp": ["Cloud Functions", "Cloud Run"],
+			"tools": ["Docker", "Kubernetes", "Terraform", "Jenkins"]
+		},
+		"backendApis": {
+			"languages": ["TypeScript", "Node.js", "Python"],
+			"architecture": ["REST", "GraphQL", "Microservices"],
+			"practices": ["TDD", "Clean Code", "SOLID Principles"]
+		},
+		"frontend": {
+			"frameworks": ["React", "Next.js", "Vue.js"],
+			"tools": ["TailwindCSS", "Storybook", "Jest"]
+		},
+		"testingObservability": {
+			"testing": ["Jest", "Cypress", "Playwright"],
+			"monitoring": ["Datadog", "Prometheus", "Grafana"]
+		},
+		"databases": {
+			"sql": ["PostgreSQL", "MySQL"],
+			"nosql": ["MongoDB", "Redis"]
+		},
+		"developmentTools": {
+			"versionControl": ["Git", "GitHub Actions"],
+			"cicd": ["Jenkins", "CircleCI"],
+			"others": ["VS Code", "Postman", "Docker Desktop"]
+		}
+	},
+	"experience": [
+		{
+			"position": "Senior Software Engineer",
+			"company": "TechCorp Inc.",
+			"location": "Toronto, ON",
+			"duration": "January 2021 - Present",
+			"achievements": [
+				"Led a team of 5 developers in building a cloud-native e-commerce platform",
+				"Reduced system response time by 60% through optimization and caching strategies",
+				"Implemented CI/CD pipelines that reduced deployment time by 75%",
+				"Mentored 3 junior developers who were promoted within 12 months"
+			],
+			"techStack": [
+				"TypeScript",
+				"React",
+				"Node.js",
+				"AWS",
+				"Docker",
+				"Kubernetes",
+				"Redis",
+				"CI/CD",
+				"Microservices",
+				"REST APIs",
+				"GraphQL",
+				"MongoDB",
+				"PostgreSQL",
+				"Jest",
+				"Cypress"
+			]
+		},
+		{
+			"position": "Software Engineer",
+			"company": "FinTech Solutions",
+			"location": "Toronto, ON",
+			"duration": "June 2018 - December 2020",
+			"achievements": [
+				"Developed and maintained microservices handling $1M+ daily transactions",
+				"Implemented automated testing that increased code coverage to 85%",
+				"Reduced system downtime by 40% through improved error handling"
+			],
+			"techStack": [
+				"JavaScript",
+				"Vue.js",
+				"Python",
+				"PostgreSQL",
+				"Docker",
+				"Kubernetes",
+				"Microservices",
+				"REST APIs",
+				"Jest",
+				"Cypress",
+				"CI/CD",
+				"AWS",
+				"Redis",
+				"MongoDB"
+			]
+		}
+	],
+	"education": [
+		{
+			"degree": "Master of Computer Science",
+			"institution": "University of Toronto",
+			"location": "Toronto, ON",
+			"duration": "2016 - 2018"
+		},
+		{
+			"degree": "Bachelor of Computer Science",
+			"institution": "University of Waterloo",
+			"location": "Waterloo, ON",
+			"duration": "2012 - 2016"
+		}
+	],
+	"impactSummary": {
+		"revenueImpact": "Generated $2M+ in additional revenue through platform optimization",
+		"teamPerformance": "Improved team velocity by 45% through process improvements",
+		"systemReliability": "Achieved 99.99% uptime for critical services",
+		"developerProductivity": "Reduced development cycle time by 35%",
+		"scalability": "Successfully handled 3x traffic increase during peak periods"
+	}
+}

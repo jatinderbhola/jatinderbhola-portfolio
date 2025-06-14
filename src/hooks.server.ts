@@ -8,7 +8,7 @@ export const handle: Handle = async ({ event, resolve }) => {
 
 	// Get language from URL or default to 'en'
 	const lang = event.url.searchParams.get('lang') || 'en';
-	
+
 	// Set the language in the request context
 	event.locals.lang = lang;
 

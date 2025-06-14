@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+
 - Initial project setup with SvelteKit
 - TypeScript configuration and interfaces
 - TailwindCSS integration
@@ -20,16 +21,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Git configuration (.gitignore, commit template)
 
 ### Changed
+
 - None
 
 ### Deprecated
+
 - None
 
 ### Removed
+
 - None
 
 ### Fixed
+
 - None
 
 ### Security
-- None 
+
+- None

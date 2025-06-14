@@ -51,6 +51,7 @@ If you find this project useful or interesting:
 The template includes built-in support for multiple languages:
 
 1. Available Languages:
+
    - English (en)
    - Chinese (中文)
    - Hindi (हिन्दी)
@@ -58,16 +59,19 @@ The template includes built-in support for multiple languages:
    - Spanish (Español)
 
 2. Adding Translations:
+
    - Translation files are located in `src/lib/i18n/translations/`
    - Each language has its own JSON file (e.g., `en.json`, `zh.json`)
    - Follow the existing structure for new translations
 
 3. Language Configuration:
+
    - Language settings are in `src/lib/i18n/config.ts`
    - Add new languages by extending the `languages` object
    - Include language metadata (name, nativeName, direction, dateFormat)
 
 4. Using Translations:
+
    - Use the `t()` function from `$lib/i18n/utils`
    - Example: `{t('nav.home')}`
    - Supports nested keys and parameters
@@ -80,10 +84,12 @@ The template includes built-in support for multiple languages:
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js (v16 or later)
 - npm or yarn
 
 ### Installation
+
 1. Clone the repository:
    ```bash
    git clone https://github.com/jatinderbhola/jatinderbhola-portfolio.git
@@ -100,10 +106,12 @@ The template includes built-in support for multiple languages:
    The site will be available at [http://localhost:5173](http://localhost:5173).
 
 ### Customization
+
 - Update `default-resume.json` with your personal information.
 - Modify the components in `src/lib/components` to suit your needs.
 
 ## Deployment to Vercel
+
 This project is configured for easy deployment on Vercel:
 
 1. Push your changes to a GitHub repository.
@@ -112,6 +120,7 @@ This project is configured for easy deployment on Vercel:
 4. Vercel will automatically detect the SvelteKit project and deploy it for free.
 
 ## License
+
 This project is open source and available under the MIT License.
 
 ## Support
@@ -121,4 +130,3 @@ If you find this project helpful and would like to support my work, you can buy 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/j_bhola)
 
 Thank you for your support! 🙏
-

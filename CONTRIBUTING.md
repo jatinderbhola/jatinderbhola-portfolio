@@ -70,6 +70,7 @@ We follow the conventional commits specification:
 ```
 
 Types:
+
 - feat: New feature
 - fix: Bug fix
 - docs: Documentation changes
@@ -88,4 +89,4 @@ Types:
 
 ## Questions?
 
-Feel free to open an issue for any questions or concerns. 
+Feel free to open an issue for any questions or concerns.
