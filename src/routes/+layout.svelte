@@ -15,6 +15,9 @@
 		try {
 			if (isHomePage) {
 				await initializeTranslations();
+			} else {
+				// For non-home pages, set language to English
+				currentLanguage.set('en');
 			}
 			isLoading = false;
 		} catch (e) {
@@ -46,7 +49,7 @@
 						<span>Loading...</span>
 					{:else}
 						<a href="/" class="transition-colors duration-200 hover:text-indigo-600"
-							>{isHomePage ? 'Portfolio' : t('nav.portfolio')}</a
+							>{!isHomePage ? 'Portfolio' : t('nav.portfolio')}</a
 						>
 					{/if}
 				</h1>
