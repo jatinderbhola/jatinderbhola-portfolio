@@ -53,6 +53,12 @@
 	</script>
 </svelte:head>
 
+<noscript>
+  <h1>Jatinder (Jay) Bhola - Engineering Advisor & Sr. Server Engineer</h1>
+  <p>12+ years building cloud-native platforms. Currently at Raya.</p>
+  <p>Toronto, ON, Canada | <a href="mailto:JatinderBhola@gmail.com">Contact</a></p>
+</noscript>
+
 <div class="space-y-8">
 	<PersonalInfo />
 
