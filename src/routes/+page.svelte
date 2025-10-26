@@ -16,10 +16,10 @@
 </script>
 
 <svelte:head>
-	<title>JatinderBhola Portfolio Manager - Open Source</title>
+	<title>Jatinder (Jay) Bhola - Engineering Advisor & Sr. Server Engineer | Toronto - Open Source</title>
 	<meta
 		name="description"
-		content="Open Source Portfolio Manager. Manage your professional profile, projects, and more."
+		content="Jatinder (Jay) Bhola - Engineering Advisor & Sr. Server Engineer at Raya. 12+ years building cloud-native platforms on AWS/GCP. Professional speaker on system design & serverless. Toronto-based."
 	/>
 	<meta name="robots" content="index, follow" />
 	<link rel="canonical" href="https://www.jatinderbhola.com/" />
@@ -36,23 +36,17 @@
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://www.jatinderbhola.com/" />
-	<meta property="og:title" content="JatinderBhola Portfolio Manager" />
-	<meta
-		property="og:description"
-		content="Open Source Portfolio Manager. Manage your professional profile, projects, and more."
-	/>
+	<meta property="og:title" content="Jatinder (Jay) Bhola - Engineering Advisor & Sr. Server Engineer" />
+	<meta property="og:description" content="12+ years building cloud-native platforms. $1.3M revenue impact. Professional speaker on system design & serverless. Currently at Raya." />
 	<meta property="og:image" content="https://www.jatinderbhola.com/og/portfolio-manager.png" />
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:url" content="https://www.jatinderbhola.com/" />
-	<meta property="twitter:title" content="JatinderBhola Portfolio Manager" />
-	<meta
-		property="twitter:description"
-		content="Open Source Portfolio Manager. Manage your professional profile, projects, and more."
-	/>
+	<meta property="twitter:title" content="Jay Bhola - Engineering Advisor & Sr. Server Engineer" />
+	<meta property="twitter:description" content="Engineering leader with 12+ years experience. Speaker at GDG DevFest, building cloud-native platforms at Raya. AWS/GCP | TypeScript | Serverless" />
 	<meta property="twitter:image" content="https://www.jatinderbhola.com/og/portfolio-manager.png" />
-
+	<meta name="keywords" content="{$page.data.structuredData.tags}" />
 	<!-- Structured Data -->
 	<script type="application/ld+json">
     {$page.data.structuredData}

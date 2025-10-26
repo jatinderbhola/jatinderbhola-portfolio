@@ -2,8 +2,6 @@
 	import '../app.css';
 	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
-	import LanguageSwitcher from '$lib/components/layout/LanguageSwitcher.svelte';
-	import ProfileSwitcher from '$lib/components/layout/ProfileSwitcher.svelte';
 	import { initializeTranslations, t, translationsStore } from '$lib/i18n/utils';
 	import { currentLanguage } from '$lib/i18n/store';
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
@@ -35,9 +33,6 @@
 		}
 	});
 
-	// Subscribe to both language and translations changes
-	$: currentLang = $currentLanguage;
-	$: translations = $translationsStore;
 </script>
 
 <div class="min-h-screen bg-gray-50">
