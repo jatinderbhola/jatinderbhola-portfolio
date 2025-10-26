@@ -102,7 +102,7 @@ export interface Resume {
 	};
 	personalInfo: PersonalInfo;
 	summary: string;
-	latestAiProduct: LatestAiProduct;
+	latestAiProducts: LatestAiProduct[];
 	coreCompetencies: string[];
 	technicalSkills: string[];
 	experience: Experience[];

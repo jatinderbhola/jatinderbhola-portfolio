@@ -3,7 +3,7 @@
 	import { goto } from '$app/navigation';
 
 	const profiles = [
-		{ id: 'default', name: 'My Resume' },
+		{ id: 'default', name: 'Latest Resume' },
 		{ id: 'sample', name: 'Sample Resume' }
 	] as const;
 

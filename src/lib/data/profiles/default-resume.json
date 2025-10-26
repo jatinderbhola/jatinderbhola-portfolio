@@ -1,519 +1,458 @@
 {
-	"seoTags": {
-		"leadership": [
-			"engineering manager",
-			"technical lead",
-			"team leadership",
-			"engineering leadership",
-			"software development manager",
-			"cross-functional collaboration",
-			"agile leadership",
-			"scrum master",
-			"people management",
-			"performance management",
-			"mentorship",
-			"coaching",
-			"okr management",
-			"strategic planning",
-			"budget management",
-			"stakeholder management",
-			"product management",
-			"technical strategy",
-			"engineering culture",
-			"remote team management",
-			"inclusive leadership",
-			"diversity and inclusion",
-			"talent development",
-			"career development",
-			"1:1 meetings",
-			"sprint planning",
-			"retrospectives",
-			"code reviews",
-			"pair programming"
-		],
-		"technicalSkills": [
-			"typescript",
-			"javascript",
-			"node.js",
-			"react",
-			"angular",
-			"vue.js",
-			"graphql",
-			"rest api",
-			"microservices",
-			"serverless architecture",
-			"event-driven architecture",
-			"hexagonal architecture",
-			"solid principles",
-			"clean code",
-			"test-driven development",
-			"domain-driven design",
-			"system design",
-			"scalable systems",
-			"high availability",
-			"fault tolerance",
-			"performance optimization",
-			"caching strategies",
-			"database optimization",
-			"api design",
-			"web development",
-			"full-stack development",
-			"frontend development",
-			"backend development"
-		],
-		"cloudDevOps": [
-			"aws",
-			"amazon web services",
-			"google cloud platform",
-			"gcp",
-			"kubernetes",
-			"docker",
-			"containerization",
-			"ci/cd",
-			"continuous integration",
-			"continuous deployment",
-			"jenkins",
-			"github actions",
-			"circleci",
-			"terraform",
-			"infrastructure as code",
-			"serverless",
-			"lambda functions",
-			"cloud functions",
-			"step functions",
-			"sns",
-			"sqs",
-			"cloud architecture",
-			"cloud migration",
-			"devops",
-			"site reliability engineering",
-			"monitoring",
-			"observability",
-			"datadog",
-			"splunk",
-			"cloudwatch",
-			"feature flags",
-			"launchdarkly",
-			"blue-green deployment",
-			"canary deployment"
-		],
-		"databases": [
-			"postgresql",
-			"mongodb",
-			"dynamodb",
-			"redis",
-			"nosql",
-			"sql",
-			"database design",
-			"database optimization",
-			"indexing",
-			"query optimization",
-			"data modeling",
-			"acid properties",
-			"eventual consistency",
-			"sharding",
-			"replication",
-			"backup strategies",
-			"data migration"
-		],
-		"aiMachineLearning": [
-			"artificial intelligence",
-			"machine learning",
-			"github copilot",
-			"ai-driven development",
-			"automated code generation",
-			"intelligent ci/cd",
-			"smart documentation",
-			"ai code reviews",
-			"machine learning vision systems",
-			"keyence ml vision",
-			"automation",
-			"predictive analytics",
-			"developer productivity tools",
-			"ai integration",
-			"ml ops",
-			"intelligent automation"
-		],
-		"testing": [
-			"test automation",
-			"unit testing",
-			"integration testing",
-			"end-to-end testing",
-			"jest",
-			"mocha",
-			"playwright",
-			"cypress",
-			"test-driven development",
-			"behavior-driven development",
-			"code coverage",
-			"quality assurance",
-			"performance testing",
-			"load testing",
-			"stress testing",
-			"api testing",
-			"ui testing",
-			"regression testing"
-		],
-		"businessImpact": [
-			"revenue generation",
-			"cost reduction",
-			"performance improvement",
-			"scalability",
-			"uptime improvement",
-			"customer retention",
-			"user experience",
-			"conversion optimization",
-			"operational efficiency",
-			"process improvement",
-			"time to market",
-			"developer productivity",
-			"system reliability",
-			"incident reduction",
-			"technical debt reduction",
-			"roi improvement",
-			"kpi optimization",
-			"metric-driven development",
-			"data-driven decisions",
-			"business intelligence"
-		],
-		"industries": [
-			"e-commerce",
-			"fashion retail",
-			"healthcare",
-			"covid-19 solutions",
-			"logistics",
-			"shipping",
-			"supply chain",
-			"fintech",
-			"consulting",
-			"manufacturing",
-			"inventory management",
-			"retail technology",
-			"b2b saas",
-			"b2c platforms",
-			"customer-facing applications",
-			"enterprise software",
-			"startup",
-			"scale-up"
-		],
-		"methodologies": [
-			"agile",
-			"scrum",
-			"kanban",
-			"lean",
-			"devops",
-			"continuous improvement",
-			"iterative development",
-			"sprint methodology",
-			"user stories",
-			"acceptance criteria",
-			"definition of done",
-			"velocity tracking",
-			"burn-down charts",
-			"retrospectives",
-			"daily standups",
-			"sprint planning",
-			"backlog grooming",
-			"risk management",
-			"change management"
-		],
-		"softSkills": [
-			"communication",
-			"problem solving",
-			"critical thinking",
-			"decision making",
-			"analytical thinking",
-			"adaptability",
-			"innovation",
-			"creativity",
-			"time management",
-			"prioritization",
-			"conflict resolution",
-			"negotiation",
-			"presentation skills",
-			"technical writing",
-			"documentation",
-			"knowledge sharing",
-			"collaboration",
-			"empathy",
-			"emotional intelligence",
-			"cultural awareness"
-		],
-		"location": [
-			"toronto",
-			"ontario",
-			"canada",
-			"north america",
-			"remote work",
-			"hybrid work",
-			"distributed teams",
-			"global teams",
-			"timezone management",
-			"remote leadership"
-		]
-	},
-	"personalInfo": {
-		"name": "Jatinder Bhola",
-		"title": "Software Engineering Manager",
-		"subtitle": "Web & Platform · React · TypeScript · Customer-Facing Applications",
-		"location": "Toronto, ON, Canada",
-		"phone": "+1 647 *** ****",
-		"email": "JatinderBhola@gmail.com",
-		"linkedin": "https://linkedin.com/in/jatinderbhola",
-		"github": "https://github.com/jatinderbhola"
-	},
-	"summary": "Engineering leader with 10+ years of experience improving developer workflows and scaling cloud-native systems. Proven track record in leading and delivering high-impact, customer-facing platforms and empowering engineering teams to build fast, resilient web applications. Skilled in aligning product goals with technical execution and coaching engineers toward growth. Hands-on with TypeScript, Node.js, React, and cloud platforms (AWS, GCP, Kubernetes). Committed to inclusive, feedback-driven team cultures that unlock developer potential.",
-	"latestAiProduct": {
-		"title": "AI-Driven Developer Tooling Adoption",
-		"description": "Currently leading the integration of cutting-edge AI tools to enhance developer productivity and code quality",
-		"initiatives": [
-			{
-				"name": "GitHub Copilot Integration",
-				"description": "Championed adoption across engineering teams, resulting in 35% faster code completion and reduced boilerplate writing"
-			},
-			{
-				"name": "AI-Powered Code Reviews",
-				"description": "Implementing automated code quality checks using AI models to catch potential issues before human review"
-			},
-			{
-				"name": "Intelligent CI/CD Optimization",
-				"description": "Leveraging AI to predict build failures and optimize deployment pipelines"
-			},
-			{
-				"name": "Smart Documentation Generation",
-				"description": "Utilizing AI to automatically generate and maintain technical documentation from code changes"
-			}
-		],
-		"impact": "These initiatives have contributed to a 22% reduction in time-to-merge and 30% decrease in build failures across 10+ services."
-	},
-	"coreCompetencies": {
-		"leadership": [
-			"Team Leadership & Engineering Leadership",
-			"Mentorship & Performance Reviews",
-			"Budgeting & Planning",
-			"Cross-functional Collaboration",
-			"Inclusive Culture & Remote Team Building"
-		],
-		"technical": [
-			"Process Optimization",
-			"Technical Debt Management",
-			"Scalable System Design",
-			"Risk Management",
-			"Product Thinking",
-			"AI-Driven Developer Tooling Adoption"
-		]
-	},
-	"technicalSkills": {
-		"cloudDevOps": {
-			"aws": ["Lambda", "EC2", "SQS", "SNS", "Step Functions"],
-			"gcp": ["Cloud Functions", "Tasks"],
-			"tools": [
-				"Docker",
-				"Jenkins",
-				"LaunchDarkly",
-				"Datadog",
-				"CloudWatch",
-				"Kubernetes",
-				"Cypress"
-			]
-		},
-		"backendApis": {
-			"languages": ["Node.js", "TypeScript", "Java (Spring Boot)"],
-			"architecture": [
-				"REST",
-				"GraphQL",
-				"Express.js",
-				"Serverless Architecture",
-				"Event-Driven Architecture"
-			],
-			"practices": ["Caching", "DB Indexing", "Rate Limiting", "Hexagonal Architecture"]
-		},
-		"frontend": {
-			"frameworks": ["React.js", "Angular", "Vue.js"],
-			"tools": ["UI/UX", "Prettier", "Linting (eslint)"]
-		},
-		"testingObservability": {
-			"testing": ["Jest", "Mocha", "Playwright", "Cypress"],
-			"monitoring": ["Datadog", "Splunk", "CloudWatch"]
-		},
-		"databases": {
-			"sql": ["PostgreSQL"],
-			"nosql": ["MongoDB", "DocumentDB", "DynamoDB", "Redis"]
-		},
-		"developmentTools": {
-			"versionControl": ["Git", "GitHub Actions", "CircleCI"],
-			"cicd": ["Jenkins", "GitHub Actions"],
-			"others": ["Jira", "Feature Flags", "SOLID Principles", "Terraform", "GitHub Copilot"]
-		}
-	},
-	"experience": [
-		{
-			"position": "Application Development Manager (Shipping)",
-			"company": "SSENSE",
-			"location": "Toronto",
-			"duration": "August 2023 - Present",
-			"achievements": [
-				"Directed a full-stack team of 5 engineers to deliver critical shipping infrastructure, improving delivery precision and enabling real-time fulfillment decisions through the Estimated Delivery Date (EDD) feature — contributing to a 3.9% RPS uplift and 1.7% increase in customer retention revenue",
-				"Partnered with product and analytics to launch the US Priority Shipping initiative, generating $647K in incremental revenue and optimizing logistics during peak December periods",
-				"Led cross-functional planning and execution of the Shipping Surcharge system, integrating business logic with legacy systems to unlock an additional $515K in revenue from dynamic pricing strategies",
-				"Enabled product growth by shipping the Free Shipping on Full Price (FP) feature, which allowed silent sale operations and supported key acquisition strategies during promotions",
-				"Fostered inclusive team culture of delivery and accountability: instituted weekly code reviews, 1:1s, sprint rituals (planning, retrospectives), and pair programming — resulting in a 20% increase in team velocity and higher team ownership",
-				"Elevated engineering quality and operational resilience by modernizing CI/CD practices and refactoring high-risk areas, achieving 99.99% availability and reducing P1 incidents by 30%",
-				"Championed engineering growth through personalized mentorship, resulting in accelerated progression for junior engineers and a stronger DevOps-first mindset",
-				"Defined and executed OKRs focused on onboarding and CI/CD efficiency; standardized linting, test coverage, and release workflows across 10+ services, reducing time-to-merge by 22% and build failures by 30%"
-			],
-			"techStack": [
-				"TypeScript",
-				"Node.js",
-				"React",
-				"AWS",
-				"Docker",
-				"Kubernetes",
-				"CI/CD",
-				"Jenkins",
-				"GitHub Actions",
-				"MongoDB",
-				"PostgreSQL",
-				"Redis",
-				"REST APIs",
-				"GraphQL",
-				"Microservices",
-				"Jest",
-				"Cypress",
-				"Datadog",
-				"Splunk"
-			]
-		},
-		{
-			"position": "Technical Lead (Shipping and Merch)",
-			"company": "SSENSE",
-			"location": "Toronto",
-			"duration": "July 2022 - August 2023",
-			"achievements": [
-				"Designed and led the transition to an event-driven architecture using AWS Lambda, SNS, and Step Functions — improving service scalability by 40% and enabling modular releases",
-				"Facilitated engineering-wide discussions to adopt a fault-tolerant retry system for shipping workflows, reducing failed transactions by 25% during high-traffic periods",
-				"Developed self-service CI/CD pipelines and bootstrapping tools; reduced developer onboarding time by 40% and setup-related support tickets by 35%",
-				"Strengthened system reliability by implementing observability best practices with Datadog, and launching feature flagging using LaunchDarkly to enable safe experiments and faster rollouts — achieving 99.999% uptime for core services",
-				"Authored scalable GraphQL and REST APIs in TypeScript, enforcing hexagonal architecture and SOLID principles, and maintained 95%+ test coverage to support rapid iterations"
-			],
-			"techStack": [
-				"TypeScript",
-				"Node.js",
-				"AWS Lambda",
-				"SNS",
-				"Step Functions",
-				"GraphQL",
-				"REST APIs",
-				"Hexagonal Architecture",
-				"SOLID Principles",
-				"Docker",
-				"Kubernetes",
-				"CI/CD",
-				"Datadog",
-				"LaunchDarkly",
-				"Jest",
-				"MongoDB",
-				"PostgreSQL",
-				"Redis"
-			]
-		},
-		{
-			"position": "Senior Software Engineer (Contract)",
-			"company": "DriverCheck",
-			"location": "Toronto",
-			"duration": "October 2020 - June 2022",
-			"achievements": [
-				"Architected and delivered a scalable COVID-19 rapid vaccination platform within a 6-month timeline, enabling the delivery of 2,000–5,000 vaccination kits per day, meeting critical public health demands during the pandemic",
-				"Proficient in Java and familiar with Go, with quick adaptability to new back-end stacks based on project needs",
-				"Developed and deployed end-to-end microservices architecture for the platform, integrating Angular, Spring Boot, and MongoDB to ensure robust performance and scalability",
-				"Improved team productivity by designing and implementing scripts to automate Git branch management and anonymize sensitive MongoDB data, streamlining development and testing processes",
-				"Played a key role in daily scrums, sprint planning, and cross-functional problem-solving, aligning technical execution with business priorities and improving sprint velocity",
-				"Enhanced software quality by creating and executing comprehensive automated tests and performing rigorous application testing, achieving a 30% reduction in post-release defects",
-				"Collaborated with a team of 20 developers to deliver a COVID-19 testing application capable of processing 70,000+ lab-based PCR, rapid PCR, and antigen tests for corporate and governmental clients across Ontario"
-			],
-			"techStack": [
-				"Java",
-				"Spring Boot",
-				"Go",
-				"Angular",
-				"MongoDB",
-				"Microservices",
-				"REST APIs",
-				"Docker",
-				"Kubernetes",
-				"Git",
-				"CI/CD",
-				"JUnit",
-				"Selenium",
-				"PostgreSQL",
-				"Redis",
-				"AWS"
-			]
-		},
-		{
-			"position": "Solutions Architect and Tech Lead",
-			"company": "RugSimple",
-			"location": "Toronto",
-			"duration": "December 2015 - September 2020",
-			"achievements": [
-				"Drove a 70% increase in sales and enabled capitalized revenue growth of $99K (2019), $121K (2020), and $187K (2021) by designing and launching the flagship Rug Manager Program, which transformed client workflows and operational efficiency",
-				"Reduced time tracking, updating, and reporting tasks by 90% by researching and integrating a custom RFID and barcode system, enabling seamless location-based triggers and enhancing system reliability",
-				"Enhanced operational accuracy by reducing human errors by 50% and boosting productivity by 200% through the deployment of the Keyence Machine Learning Vision System",
-				"Optimized multi-platform integrations, incorporating QuickBooks for accounting, Stripe for payments, and Shopify for inventory management, streamlining operations and accelerating issue resolution by 40%",
-				"Spearheaded the migration to a serverless architecture using Google Cloud Functions and Tasks, achieving a 30% reduction in infrastructure costs and enhancing system scalability",
-				"Co-led product roadmap and UI/UX improvements directly with founder and marketing, driving consistent branding and a 35% uplift in user session duration",
-				"Architected and launched a responsive, customer-facing ordering platform using Vue.js and Node.js, increasing online transactions by 60% and boosting recurring orders",
-				"Championed the transition to cloud-native infrastructure on GCP, leveraging tools like GCF, GCA, and Task Queues to ensure scalability and reliability for critical processes"
-			],
-			"techStack": [
-				"Angular",
-				"Vue",
-				"Node.js",
-				"Express",
-				"MongoDB",
-				"Google Cloud (GAE, GCE, GCF, Task Queue)",
-				"WooCommerce",
-				"Shopify",
-				"Stripe",
-				"QuickBooks",
-				"Zapier",
-				"Auth0",
-				"RFID Systems",
-				"Barcode Systems",
-				"Machine Learning Vision",
-				"Serverless Architecture",
-				"REST APIs",
-				"Docker",
-				"CI/CD"
-			]
-		},
-		{
-			"position": "Software Developer (Contract)",
-			"company": "Accenture",
-			"location": "Delhi, India",
-			"duration": "July 2014 - April 2015",
-			"achievements": []
-		}
-	],
-	"education": [
-		{
-			"degree": "Postgraduate Certificate – Mobile Application Development",
-			"institution": "Lambton College",
-			"location": "Toronto, Ontario, Canada",
-			"duration": "2015 – 2016"
-		},
-		{
-			"degree": "Bachelor of Computer Science",
-			"institution": "CT Institute of Engineering & Management",
-			"location": "Punjab, India",
-			"duration": "2009 – 2013"
-		}
-	],
-	"impactSummary": {
-		"revenueImpact": "Generated over $1.3M in incremental revenue through shipping initiatives",
-		"teamPerformance": "Achieved 20% increase in team velocity and 30% reduction in P1 incidents",
-		"systemReliability": "Maintained 99.99% - 99.999% uptime across critical services",
-		"developerProductivity": "Reduced time-to-merge by 22% and build failures by 30%",
-		"scalability": "Improved service scalability by 40% through event-driven architecture"
-	}
+  "seoTags": {
+    "leadership": [
+      "engineering manager",
+      "technical lead",
+      "team leadership",
+      "engineering leadership",
+      "software development manager",
+      "cross-functional collaboration",
+      "agile leadership",
+      "scrum master",
+      "people management",
+      "performance management",
+      "mentorship",
+      "coaching",
+      "okr management",
+      "strategic planning",
+      "budget management",
+      "stakeholder management",
+      "product management",
+      "technical strategy",
+      "engineering culture",
+      "remote team management",
+      "inclusive leadership",
+      "diversity and inclusion",
+      "talent development",
+      "career development",
+      "1:1 meetings",
+      "sprint planning",
+      "retrospectives",
+      "code reviews",
+      "pair programming"
+    ],
+    "technicalSkills": [
+      "typescript",
+      "javascript",
+      "node.js",
+      "react",
+      "angular",
+      "vue.js",
+      "graphql",
+      "rest api",
+      "microservices",
+      "serverless architecture",
+      "event-driven architecture",
+      "hexagonal architecture",
+      "solid principles",
+      "clean code",
+      "test-driven development",
+      "domain-driven design",
+      "system design",
+      "scalable systems",
+      "high availability",
+      "fault tolerance",
+      "performance optimization",
+      "caching strategies",
+      "database optimization",
+      "api design",
+      "web development",
+      "full-stack development",
+      "frontend development",
+      "backend development"
+    ],
+    "cloudDevOps": [
+      "aws",
+      "amazon web services",
+      "google cloud platform",
+      "gcp",
+      "kubernetes",
+      "docker",
+      "containerization",
+      "ci/cd",
+      "continuous integration",
+      "continuous deployment",
+      "jenkins",
+      "github actions",
+      "circleci",
+      "terraform",
+      "infrastructure as code",
+      "serverless",
+      "lambda functions",
+      "cloud functions",
+      "step functions",
+      "sns",
+      "sqs",
+      "cloud architecture",
+      "cloud migration",
+      "devops",
+      "site reliability engineering",
+      "monitoring",
+      "observability",
+      "datadog",
+      "splunk",
+      "cloudwatch",
+      "feature flags",
+      "launchdarkly",
+      "blue-green deployment",
+      "canary deployment"
+    ],
+    "databases": [
+      "postgresql",
+      "mongodb",
+      "dynamodb",
+      "redis",
+      "nosql",
+      "sql",
+      "database design",
+      "database optimization",
+      "indexing",
+      "query optimization",
+      "data modeling",
+      "acid properties",
+      "eventual consistency",
+      "sharding",
+      "replication",
+      "backup strategies",
+      "data migration"
+    ],
+    "aiMachineLearning": [
+      "artificial intelligence",
+      "machine learning",
+      "github copilot",
+      "ai-driven development",
+      "automated code generation",
+      "intelligent ci/cd",
+      "smart documentation",
+      "ai code reviews",
+      "machine learning vision systems",
+      "keyence ml vision",
+      "automation",
+      "predictive analytics",
+      "developer productivity tools",
+      "ai integration",
+      "ml ops",
+      "intelligent automation"
+    ],
+    "testing": [
+      "test automation",
+      "unit testing",
+      "integration testing",
+      "end-to-end testing",
+      "jest",
+      "mocha",
+      "playwright",
+      "cypress",
+      "test-driven development",
+      "behavior-driven development",
+      "code coverage",
+      "quality assurance",
+      "performance testing",
+      "load testing",
+      "stress testing",
+      "api testing",
+      "ui testing",
+      "regression testing"
+    ],
+    "businessImpact": [
+      "revenue generation",
+      "cost reduction",
+      "performance improvement",
+      "scalability",
+      "uptime improvement",
+      "customer retention",
+      "user experience",
+      "conversion optimization",
+      "operational efficiency",
+      "process improvement",
+      "time to market",
+      "developer productivity",
+      "system reliability",
+      "incident reduction",
+      "technical debt reduction",
+      "roi improvement",
+      "kpi optimization",
+      "metric-driven development",
+      "data-driven decisions",
+      "business intelligence"
+    ],
+    "industries": [
+      "e-commerce",
+      "fashion retail",
+      "healthcare",
+      "covid-19 solutions",
+      "logistics",
+      "shipping",
+      "supply chain",
+      "fintech",
+      "consulting",
+      "manufacturing",
+      "inventory management",
+      "retail technology",
+      "b2b saas",
+      "b2c platforms",
+      "customer-facing applications",
+      "enterprise software",
+      "startup",
+      "scale-up"
+    ],
+    "methodologies": [
+      "agile",
+      "scrum",
+      "kanban",
+      "lean",
+      "devops",
+      "continuous improvement",
+      "iterative development",
+      "sprint methodology",
+      "user stories",
+      "acceptance criteria",
+      "definition of done",
+      "velocity tracking",
+      "burn-down charts",
+      "retrospectives",
+      "daily standups",
+      "sprint planning",
+      "backlog grooming",
+      "risk management",
+      "change management"
+    ],
+    "softSkills": [
+      "communication",
+      "problem solving",
+      "critical thinking",
+      "decision making",
+      "analytical thinking",
+      "adaptability",
+      "innovation",
+      "creativity",
+      "time management",
+      "prioritization",
+      "conflict resolution",
+      "negotiation",
+      "presentation skills",
+      "technical writing",
+      "documentation",
+      "knowledge sharing",
+      "collaboration",
+      "empathy",
+      "emotional intelligence",
+      "cultural awareness"
+    ],
+    "location": [
+      "toronto",
+      "ontario",
+      "canada",
+      "north america",
+      "remote work",
+      "hybrid work",
+      "distributed teams",
+      "global teams",
+      "timezone management",
+      "remote leadership"
+    ]
+  },
+  "personalInfo": {
+    "name": "Jatinder (Jay) Bhola",
+    "title": "Engineering Advisor, Professional Speaker, and Sr. Server Engineer",
+    "subtitle": "Web & Platform · React · TypeScript · Cloud · Customer-Facing Applications",
+    "location": "Toronto, ON, Canada",
+    "phone": "+1 647 *** ****",
+    "email": "JatinderBhola@gmail.com",
+    "socialLinks": [
+      { "platform": "linkedin", "url": "https://linkedin.com/in/jatinderbhola" },
+      { "platform": "Instagram", "url": "https://www.instagram.com/techwith.jaybhola" },
+      { "platform": "Github", "url": "https://github.com/jatinderbhola" },
+      { "platform": "Link Tree", "url": "http://linktr.ee/jaybholaa" },
+      {
+        "platform": "Book a talk",
+        "url": "mailto:JatinderBhola@gmail.com?subject=Speaking%20request&body=Hi%20Jay,%0A%0AI'd%20like%20to%20book%20a%20talk%20on%20[topic]%20for%20[date].%0AExpected%20audience:%20[students/pros]%0ADuration:%20[45–60%20min]%0A%0AThanks!"
+      }
+    ]
+  },
+  "summary": "Engineering leader with 12+ years building cloud-native, customer-facing platforms. I scale systems on AWS and GCP with TypeScript, Node.js, and React, and drive delivery through clear architectures and strong DevOps. Track record: +$1.3M incremental revenue, 99.99% uptime, 22% faster merges, 30% fewer build failures. I mentor engineers and speak on system design, serverless, and career growth across Toronto.",
+  "latestAiProducts": [
+    {
+      "title": "Professional Speaking & Community Engagement (Reach out for booking)",
+      "description": "Talks, panels, and workshops for students and early-career engineers focused on system design, serverless, and career growth.",
+      "initiatives": [
+        {
+          "name": "DevFest 2025 — GDG Mississauga × GDG Sheridan (Scheduled)",
+          "description": "Upcoming speaker. Topic focus: practical system design and cloud patterns for new grads.",
+          "link": "https://gdg.community.dev/events/details/google-gdg-mississauga-presents-gdg-mississauga-x-gdg-sheridan-devfest-2025/"
+        },
+        {
+          "name": "Building Scalable Social Features with Serverless Architecture — GDG on Campus Sheridan (Completed)",
+          "description": "Intro to serverless on GCP for 3rd–4th year students. Covered event-driven design and growth-ready patterns.",
+          "link": "https://gdg.community.dev/events/details/google-gdg-on-campus-sheridan-college-trafalgar-road-campus-oakville-canada-presents-building-scalable-social-features-with-serverless-architecture/"
+        },
+        {
+          "name": "System Design Workshop: Why Your AI App Breaks at Scale — GDG on Campus Sheridan (Completed)",
+          "description": "Hands-on session on scaling strategies, bottlenecks, and reliability for AI-backed apps.",
+          "link": "https://gdg.community.dev/events/details/google-gdg-on-campus-sheridan-college-trafalgar-road-campus-oakville-canada-presents-system-design-workshop-why-your-ai-app-breaks-at-scale-and-how-to-fix-it/"
+        },
+        {
+          "name": "Professional Panel Discussion — Hack the 6ix 2025",
+          "description": "Panelist answering student questions on tech careers, job search strategy, and professional growth."
+        },
+        {
+          "name": "Hackathon Judge",
+          "description": "Judged university and community hackathons on impact, architecture, and feasibility."
+        }
+      ],
+      "impact": "Reached students and new grads across campus and community events; reinforced scalable design and career readiness."
+    },
+    {
+      "title": "AI-Driven Developer Tooling Adoption",
+      "description": "Integrating AI tools to enhance developer productivity and code quality.",
+      "initiatives": [
+        { "name": "GitHub Copilot Integration", "description": "35% faster code completion and less boilerplate." },
+        { "name": "AI-Powered Code Reviews", "description": "Automated checks pre-review to catch defects early." },
+        { "name": "Intelligent CI/CD Optimization", "description": "Predictive insights to reduce failed builds." },
+        { "name": "Smart Documentation Generation", "description": "Docs generated from code changes." }
+      ],
+      "impact": "22% faster time-to-merge and 30% fewer build failures across 10+ services."
+    }
+  ],
+  "coreCompetencies": {
+    "leadership": [
+      "Team Leadership & Engineering Leadership",
+      "Mentorship & Performance Reviews",
+      "Budgeting & Planning",
+      "Cross-functional Collaboration",
+      "Inclusive Culture & Remote Team Building"
+    ],
+    "technical": [
+      "Process Optimization",
+      "Technical Debt Management",
+      "Scalable System Design",
+      "Risk Management",
+      "Product Thinking",
+      "AI-Driven Developer Tooling Adoption"
+    ]
+  },
+  "technicalSkills": {
+    "cloudDevOps": {
+      "aws": ["Lambda", "EC2", "SQS", "SNS", "Step Functions"],
+      "gcp": ["Cloud Functions", "Tasks"],
+      "tools": ["Docker", "Jenkins", "LaunchDarkly", "Datadog", "CloudWatch", "Kubernetes", "Cypress"]
+    },
+    "backendApis": {
+      "languages": ["Node.js", "TypeScript", "Java (Spring Boot)"],
+      "architecture": ["REST", "GraphQL", "Express.js", "Serverless Architecture", "Event-Driven Architecture"],
+      "practices": ["Caching", "DB Indexing", "Rate Limiting", "Hexagonal Architecture"]
+    },
+    "frontend": {
+      "frameworks": ["React.js", "Angular", "Vue.js"],
+      "tools": ["UI/UX", "Prettier", "Linting (eslint)"]
+    },
+    "testingObservability": {
+      "testing": ["Jest", "Mocha", "Playwright", "Cypress"],
+      "monitoring": ["Datadog", "Splunk", "CloudWatch"]
+    },
+    "databases": {
+      "sql": ["PostgreSQL"],
+      "nosql": ["MongoDB", "DocumentDB", "DynamoDB", "Redis"]
+    },
+    "developmentTools": {
+      "versionControl": ["Git", "GitHub Actions", "CircleCI"],
+      "cicd": ["Jenkins", "GitHub Actions"],
+      "others": ["Jira", "Feature Flags", "SOLID Principles", "Terraform", "GitHub Copilot"]
+    }
+  },
+  "experience": [
+    {
+      "position": "Senior Server Engineer",
+      "company": "Raya",
+      "location": "United States",
+      "duration": "September 2025 - Present",
+      "achievements": [
+        "Shipping server features that keep a global community connected with low latency and high reliability."
+      ]
+    },
+    {
+      "position": "Technical Lead / Application Development Manager",
+      "company": "SSENSE",
+      "location": "Toronto",
+      "duration": "December 2022 - July 2025",
+      "achievements": [
+        "Scaled shipping platforms with event-driven services; launched EDD and Priority Shipping, drove new revenue, and improved uptime to 99.99%+."
+      ]
+    },
+    {
+      "position": "Senior Software Engineer",
+      "company": "SSENSE",
+      "location": "Toronto",
+      "duration": "July 2022 - November 2022",
+      "achievements": [
+        "Built and hardened APIs while establishing observability and safer rollouts."
+      ]
+    },
+    {
+      "position": "System Architect",
+      "company": "Acquire",
+      "location": "Toronto",
+      "duration": "November 2021 - June 2022",
+      "achievements": [
+        "Delivered real-time chat, Salesforce integrations, and CI/CD that cut response times and sped releases."
+      ]
+    },
+    {
+      "position": "Software Engineering Manager",
+      "company": "DriverCheck",
+      "location": "Toronto",
+      "duration": "October 2020 - October 2021",
+      "achievements": [
+        "Led COVID testing platform at provincial scale; Spring Boot + Angular stack handled high-throughput workflows."
+      ]
+    },
+    {
+      "position": "Senior Software Engineer → Technical Lead → Engineering Manager",
+      "company": "Turco Persian Rug Company / RugSimple",
+      "location": "Toronto",
+      "duration": "January 2017 - June 2022",
+      "achievements": [
+        "Modernized a century-old business into a SaaS platform; RFID/barcode ops, eCommerce, and GCP serverless cut costs and lifted sales."
+      ]
+    },
+    {
+      "position": "Professional Speaker – Tech & Career Growth",
+      "company": "DiceCape Inc.",
+      "location": "Greater Toronto Area",
+      "duration": "January 2021 - Present",
+      "achievements": [
+        "Talks and workshops on systems thinking, serverless, AI+cloud, career growth, and interview readiness."
+      ]
+    },
+    {
+      "position": "Software Engineer",
+      "company": "Tech Mahindra",
+      "location": "Chandigarh, India",
+      "duration": "September 2013 - March 2015",
+      "achievements": [
+        "Delivered features across enterprise stacks; progressed from intern to engineer."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Postgraduate Certificate – Mobile Application Development",
+      "institution": "Lambton College",
+      "location": "Toronto, Ontario, Canada",
+      "duration": "2015 – 2016"
+    },
+    {
+      "degree": "Bachelor of Computer Science",
+      "institution": "CT Institute of Engineering & Management",
+      "location": "Punjab, India",
+      "duration": "2009 – 2013"
+    }
+  ],
+  "impactSummary": {
+    "revenueImpact": "Generated over $1.3M in incremental revenue through shipping initiatives",
+    "teamPerformance": "Achieved 20% increase in team velocity and 30% reduction in P1 incidents",
+    "systemReliability": "Maintained 99.99% - 99.999% uptime across critical services",
+    "developerProductivity": "Reduced time-to-merge by 22% and build failures by 30%",
+    "scalability": "Improved service scalability by 40% through event-driven architecture"
+  }
 }

@@ -99,8 +99,8 @@
 						Blog
 					</a>
 					{#if isHomePage}
-						<ProfileSwitcher />
-						<LanguageSwitcher />
+						<!-- <ProfileSwitcher /> -->
+						<!-- <LanguageSwitcher /> -->
 					{/if}
 				</nav>
 			</div>

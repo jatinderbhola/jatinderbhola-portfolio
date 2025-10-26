@@ -68,7 +68,7 @@
 	</section>
 
 	<section>
-		<h2 class="mb-4 text-2xl font-bold text-gray-900">{t('sections.latestAiProduct')}</h2>
+		<h2 class="mb-4 text-2xl font-bold text-gray-900">{t('sections.recentActivity')}</h2>
 		<LatestAiProduct />
 	</section>
 

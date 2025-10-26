@@ -9,6 +9,7 @@
 	},
 	"sections": {
 		"professionalSummary": "Professional Summary",
+		"recentActivity": "Recent Activity",
 		"latestAiProduct": "Latest AI Product",
 		"experience": "Experience",
 		"education": "Education",

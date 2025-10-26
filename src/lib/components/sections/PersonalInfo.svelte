@@ -33,6 +33,11 @@
 						{$resume.personalInfo.location}
 					</span>
 				</p>
+				<p class="mt-2 text-gray-500">
+					<a href="mailto:{$resume.personalInfo.email}" class="hover:text-indigo-600">
+						{$resume.personalInfo.email}
+					</a>
+				</p>
 			</div>
 		</div>
 
@@ -47,22 +52,6 @@
 					{link.platform}
 				</a>
 			{/each}
-		</div>
-
-		<div class="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2">
-			<div>
-				<h2 class="mb-2 text-lg font-semibold text-gray-900">{t('common.contact')}</h2>
-				<p class="text-gray-600">
-					<a href="mailto:{$resume.personalInfo.email}" class="hover:text-indigo-600">
-						{$resume.personalInfo.email}
-					</a>
-				</p>
-				<p class="text-gray-600">
-					<a href="tel:{$resume.personalInfo.phone}" class="hover:text-indigo-600">
-						{$resume.personalInfo.phone}
-					</a>
-				</p>
-			</div>
 		</div>
 	</div>
 {/if}
