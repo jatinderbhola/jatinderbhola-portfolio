@@ -32,7 +32,6 @@
 			console.warn('Analytics not loaded:', e);
 		}
 	});
-
 </script>
 
 <div class="min-h-screen bg-gray-50">
@@ -85,6 +84,12 @@
 							</div>
 						</div>
 					</div>
+					<a
+						href="/gallery"
+						class="text-gray-600 transition-colors duration-200 hover:text-indigo-600"
+					>
+						Gallery
+					</a>
 					<a
 						href="https://blog.jatinderbhola.com"
 						class="text-gray-600 transition-colors duration-200 hover:text-indigo-600"
