@@ -254,10 +254,10 @@
   },
   "personalInfo": {
     "name": "Jatinder (Jay) Bhola",
+    "avatar": "/og/headshot.png",
     "title": "Engineering Advisor, Professional Speaker, and Sr. Server Engineer",
     "subtitle": "Web & Platform · React · TypeScript · Cloud · Customer-Facing Applications",
     "location": "Toronto, ON, Canada",
-    "phone": "+1 647 *** ****",
     "email": "JatinderBhola@gmail.com",
     "socialLinks": [
       {
