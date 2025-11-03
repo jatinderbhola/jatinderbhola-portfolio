@@ -28,6 +28,7 @@ export interface PersonalInfo {
 export interface Initiative {
 	name: string;
 	description: string;
+	link?: string;
 }
 
 export interface LatestAiProduct {

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { resume } from '$lib/stores/resume';
+	import { t } from '$lib/i18n/utils';
 </script>
 
 {#if $resume}
@@ -14,6 +15,11 @@
 						<div class="rounded-lg bg-gray-50 p-4">
 							<h4 class="mb-2 font-semibold text-gray-900">{initiative.name}</h4>
 							<p class="text-gray-600">{initiative.description}</p>
+							{#if initiative.link}
+								<a href={initiative.link} class="text-blue-500" target="_blank"
+									>{t('common.readMore')}</a
+								>
+							{/if}
 						</div>
 					{/each}
 				</div>

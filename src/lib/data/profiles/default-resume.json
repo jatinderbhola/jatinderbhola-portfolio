@@ -260,10 +260,22 @@
     "phone": "+1 647 *** ****",
     "email": "JatinderBhola@gmail.com",
     "socialLinks": [
-      { "platform": "linkedin", "url": "https://linkedin.com/in/jatinderbhola" },
-      { "platform": "Instagram", "url": "https://www.instagram.com/techwith.jaybhola" },
-      { "platform": "Github", "url": "https://github.com/jatinderbhola" },
-      { "platform": "Link Tree", "url": "http://linktr.ee/jaybholaa" },
+      {
+        "platform": "linkedin",
+        "url": "https://linkedin.com/in/jatinderbhola"
+      },
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/techwith.jaybhola"
+      },
+      {
+        "platform": "Github",
+        "url": "https://github.com/jatinderbhola"
+      },
+      {
+        "platform": "Link Tree",
+        "url": "http://linktr.ee/jaybholaa"
+      },
       {
         "platform": "Book a talk",
         "url": "mailto:JatinderBhola@gmail.com?subject=Speaking%20request&body=Hi%20Jay,%0A%0AI'd%20like%20to%20book%20a%20talk%20on%20[topic]%20for%20[date].%0AExpected%20audience:%20[students/pros]%0ADuration:%20[45–60%20min]%0A%0AThanks!"
@@ -282,6 +294,11 @@
           "link": "https://gdg.community.dev/events/details/google-gdg-mississauga-presents-gdg-mississauga-x-gdg-sheridan-devfest-2025/"
         },
         {
+          "name": "TechTalk @ TorontoJS, ",
+          "description": "Learn key system design concepts: rate limiting, serverless architecture, caching, load balancing, and the CAP theorem. Ideal for new grads, junior developers, and anyone interested in large-scale systems.",
+          "link": "https://guild.host/events/techtalk-inperson-november-22m9cg"
+        },
+        {
           "name": "Building Scalable Social Features with Serverless Architecture — GDG on Campus Sheridan (Completed)",
           "description": "Intro to serverless on GCP for 3rd–4th year students. Covered event-driven design and growth-ready patterns.",
           "link": "https://gdg.community.dev/events/details/google-gdg-on-campus-sheridan-college-trafalgar-road-campus-oakville-canada-presents-building-scalable-social-features-with-serverless-architecture/"
@@ -296,8 +313,9 @@
           "description": "Panelist answering student questions on tech careers, job search strategy, and professional growth."
         },
         {
-          "name": "Hackathon Judge",
-          "description": "Judged university and community hackathons on impact, architecture, and feasibility."
+          "name": "Hackville 2024 Judge",
+          "description": "Judged university and community hackathons on impact, architecture, and feasibility.",
+          "link": "https://hackville2024.devpost.com/#judges"
         }
       ],
       "impact": "Reached students and new grads across campus and community events; reinforced scalable design and career readiness."
@@ -306,10 +324,22 @@
       "title": "AI-Driven Developer Tooling Adoption",
       "description": "Integrating AI tools to enhance developer productivity and code quality.",
       "initiatives": [
-        { "name": "GitHub Copilot Integration", "description": "35% faster code completion and less boilerplate." },
-        { "name": "AI-Powered Code Reviews", "description": "Automated checks pre-review to catch defects early." },
-        { "name": "Intelligent CI/CD Optimization", "description": "Predictive insights to reduce failed builds." },
-        { "name": "Smart Documentation Generation", "description": "Docs generated from code changes." }
+        {
+          "name": "GitHub Copilot Integration",
+          "description": "35% faster code completion and less boilerplate."
+        },
+        {
+          "name": "AI-Powered Code Reviews",
+          "description": "Automated checks pre-review to catch defects early."
+        },
+        {
+          "name": "Intelligent CI/CD Optimization",
+          "description": "Predictive insights to reduce failed builds."
+        },
+        {
+          "name": "Smart Documentation Generation",
+          "description": "Docs generated from code changes."
+        }
       ],
       "impact": "22% faster time-to-merge and 30% fewer build failures across 10+ services."
     }
@@ -333,31 +363,100 @@
   },
   "technicalSkills": {
     "cloudDevOps": {
-      "aws": ["Lambda", "EC2", "SQS", "SNS", "Step Functions"],
-      "gcp": ["Cloud Functions", "Tasks"],
-      "tools": ["Docker", "Jenkins", "LaunchDarkly", "Datadog", "CloudWatch", "Kubernetes", "Cypress"]
+      "aws": [
+        "Lambda",
+        "EC2",
+        "SQS",
+        "SNS",
+        "Step Functions"
+      ],
+      "gcp": [
+        "Cloud Functions",
+        "Tasks"
+      ],
+      "tools": [
+        "Docker",
+        "Jenkins",
+        "LaunchDarkly",
+        "Datadog",
+        "CloudWatch",
+        "Kubernetes",
+        "Cypress"
+      ]
     },
     "backendApis": {
-      "languages": ["Node.js", "TypeScript", "Java (Spring Boot)"],
-      "architecture": ["REST", "GraphQL", "Express.js", "Serverless Architecture", "Event-Driven Architecture"],
-      "practices": ["Caching", "DB Indexing", "Rate Limiting", "Hexagonal Architecture"]
+      "languages": [
+        "Node.js",
+        "TypeScript",
+        "Java (Spring Boot)"
+      ],
+      "architecture": [
+        "REST",
+        "GraphQL",
+        "Express.js",
+        "Serverless Architecture",
+        "Event-Driven Architecture"
+      ],
+      "practices": [
+        "Caching",
+        "DB Indexing",
+        "Rate Limiting",
+        "Hexagonal Architecture"
+      ]
     },
     "frontend": {
-      "frameworks": ["React.js", "Angular", "Vue.js"],
-      "tools": ["UI/UX", "Prettier", "Linting (eslint)"]
+      "frameworks": [
+        "React.js",
+        "Angular",
+        "Vue.js"
+      ],
+      "tools": [
+        "UI/UX",
+        "Prettier",
+        "Linting (eslint)"
+      ]
     },
     "testingObservability": {
-      "testing": ["Jest", "Mocha", "Playwright", "Cypress"],
-      "monitoring": ["Datadog", "Splunk", "CloudWatch"]
+      "testing": [
+        "Jest",
+        "Mocha",
+        "Playwright",
+        "Cypress"
+      ],
+      "monitoring": [
+        "Datadog",
+        "Splunk",
+        "CloudWatch"
+      ]
     },
     "databases": {
-      "sql": ["PostgreSQL"],
-      "nosql": ["MongoDB", "DocumentDB", "DynamoDB", "Redis"]
+      "sql": [
+        "PostgreSQL"
+      ],
+      "nosql": [
+        "MongoDB",
+        "DocumentDB",
+        "DynamoDB",
+        "Redis"
+      ]
     },
     "developmentTools": {
-      "versionControl": ["Git", "GitHub Actions", "CircleCI"],
-      "cicd": ["Jenkins", "GitHub Actions"],
-      "others": ["Jira", "Feature Flags", "SOLID Principles", "Terraform", "GitHub Copilot"]
+      "versionControl": [
+        "Git",
+        "GitHub Actions",
+        "CircleCI"
+      ],
+      "cicd": [
+        "Jenkins",
+        "GitHub Actions"
+      ],
+      "others": [
+        "Jira",
+        "Feature Flags",
+        "SOLID Principles",
+        "Terraform",
+        "GitHub Copilot"
+      ]
     }
   },
   "experience": [
