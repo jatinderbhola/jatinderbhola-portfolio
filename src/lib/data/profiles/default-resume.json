@@ -289,7 +289,7 @@
       "description": "Talks, panels, and workshops for students and early-career engineers focused on system design, serverless, and career growth.",
       "initiatives": [
         {
-          "name": "DevFest 2025 — GDG Mississauga × GDG Sheridan (Scheduled)",
+          "name": "DevFest 2025 — GDG Mississauga × GDG Sheridan",
           "description": "Upcoming speaker. Topic focus: practical system design and cloud patterns for new grads.",
           "link": "https://gdg.community.dev/events/details/google-gdg-mississauga-presents-gdg-mississauga-x-gdg-sheridan-devfest-2025/"
         },
@@ -297,6 +297,11 @@
           "name": "TechTalk @ TorontoJS, ",
           "description": "Learn key system design concepts: rate limiting, serverless architecture, caching, load balancing, and the CAP theorem. Ideal for new grads, junior developers, and anyone interested in large-scale systems.",
           "link": "https://guild.host/events/techtalk-inperson-november-22m9cg"
+        },
+        {
+          "name": "Panelist @ TechBiz Society Presents: A Fall Fireside Chat, Beyond the Code!, ",
+          "description": "Connect with industry professionals from Scotiabank, Citi, and Talencity. Whether you're exploring data analytics or looking to build your networking and interview skills, this is your opportunity to learn from industry leaders.",
+          "link": "https://luma.com/3kyj7cl6"
         },
         {
           "name": "Building Scalable Social Features with Serverless Architecture — GDG on Campus Sheridan (Completed)",
@@ -310,7 +315,8 @@
         },
         {
           "name": "Professional Panel Discussion — Hack the 6ix 2025",
-          "description": "Panelist answering student questions on tech careers, job search strategy, and professional growth."
+          "description": "Panelist answering student questions on tech careers, job search strategy, and professional growth.",
+          "link": "https://hackthe6ix.com"
         },
         {
           "name": "Hackville 2024 Judge",
