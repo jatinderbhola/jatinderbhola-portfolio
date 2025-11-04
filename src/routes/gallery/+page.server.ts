@@ -3,7 +3,7 @@ import { join } from 'path';
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async () => {
-    const staticPath = join(process.cwd(), 'static', 'portfolio-images');
+    const staticPath = join(process.cwd(), 'portfolio-images');
 
     try {
         const files = await readdir(staticPath);
