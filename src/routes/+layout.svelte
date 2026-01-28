@@ -4,7 +4,6 @@
 	import { page } from '$app/stores';
 	import { initializeTranslations, t, translationsStore } from '$lib/i18n/utils';
 	import { currentLanguage } from '$lib/i18n/store';
-	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 
 	let isLoading = true;
 	$: isHomePage = $page.url.pathname === '/';
@@ -21,15 +20,6 @@
 		} catch (e) {
 			console.error('Failed to initialize translations:', e);
 			isLoading = false;
-		}
-		// Call the SvelteKit-specific injectSpeedInsights function
-		injectSpeedInsights();
-		// Dynamically import and inject Vercel analytics
-		try {
-			const analytics = await import('@vercel/analytics');
-			if (typeof analytics.inject === 'function') analytics.inject();
-		} catch (e) {
-			console.warn('Analytics not loaded:', e);
 		}
 	});
 </script>

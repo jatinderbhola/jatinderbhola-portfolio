@@ -1,9 +1,14 @@
 import { readdir } from 'fs/promises';
 import { join } from 'path';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async () => {
-    const staticPath = join(process.cwd(), 'portfolio-images');
+    // For static builds, read from the static directory
+    // Use a more robust path resolution
+    const projectRoot = process.cwd();
+    const staticPath = join(projectRoot, 'static', 'portfolio-images');
 
     try {
         const files = await readdir(staticPath);

@@ -3,8 +3,17 @@ import type { PageServerLoad } from './$types';
 import { getAvatarUrl, getAvatarFallback } from '$lib/utils/avatar';
 
 export const load: PageServerLoad = async ({ url }) => {
-	const lang = url.searchParams.get('lang') || 'en';
-	const profile = url.searchParams.get('profile') || 'default';
+	// During prerendering, searchParams might not be accessible
+	let lang = 'en';
+	let profile = 'default';
+	try {
+		lang = url.searchParams.get('lang') || 'en';
+		profile = url.searchParams.get('profile') || 'default';
+	} catch {
+		// During prerendering, use defaults
+		lang = 'en';
+		profile = 'default';
+	}
 
 	try {
 		const resumeData = await import(`$lib/data/profiles/${profile}-resume.json`);

@@ -7,7 +7,14 @@ export const handle: Handle = async ({ event, resolve }) => {
 	}
 
 	// Get language from URL or default to 'en'
-	const lang = event.url.searchParams.get('lang') || 'en';
+	// During prerendering, searchParams might not be available, so we need to check
+	let lang = 'en';
+	try {
+		lang = event.url.searchParams.get('lang') || 'en';
+	} catch {
+		// During prerendering, searchParams access might fail
+		lang = 'en';
+	}
 
 	// Set the language in the request context
 	event.locals.lang = lang;
