@@ -240,6 +240,13 @@
 		font-size: 0.875em;
 	}
 
+	/* Override Tailwind .text-gray-900 on code inside dark pre so text stays light */
+	:global(.prose pre code.text-gray-900),
+	:global(.prose pre .text-gray-900),
+	:global(.prose pre[class*="text-gray-900"]) {
+		color: #f9fafb !important;
+	}
+
 	/* Style for code blocks that might not have prose classes */
 	:global(.prose pre[class*="code"]),
 	:global(.prose pre[class*="snippet"]),
@@ -272,8 +279,12 @@
 		background: transparent !important;
 	}
 
-	/* Ensure all code elements inside pre have visible text */
-	:global(.prose pre *) {
+	/* Ensure all code elements inside pre have visible text (override any utility class) */
+	:global(.prose pre *),
+	:global(.prose pre code[class*="text-gray"]),
+	:global(.prose pre.overflow-x-auto *),
+	:global(.prose pre.bg-gray-50 *),
+	:global(.prose pre[class*="bg-gray-50"] *) {
 		color: #f9fafb !important;
 	}
 

@@ -227,7 +227,6 @@
 	}
 
 	.code-snippet pre code {
-		color: #111827 !important; /* Ensure code text is visible */
 		background: transparent !important;
 	}
 

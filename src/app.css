@@ -23,15 +23,26 @@ body {
 	color: #111827; /* gray-900 */
 }
 
-/* Fix for code blocks with light backgrounds */
+/* Fix for code blocks: dark background + light text so code is always readable */
 pre.bg-gray-50,
-pre[class*="bg-gray-50"] {
+pre[class*="bg-gray-50"],
+pre.overflow-x-auto,
+pre[class*="overflow-x-auto"] {
 	background-color: #1f2937 !important; /* gray-800 */
 	color: #f9fafb !important; /* gray-50 */
 }
 
 pre.bg-gray-50 code,
-pre[class*="bg-gray-50"] code {
+pre[class*="bg-gray-50"] code,
+pre.overflow-x-auto code,
+pre code.text-gray-900,
+pre code[class*="text-gray"] {
 	color: #f9fafb !important;
 	background: transparent !important;
+}
+
+/* Override Tailwind .text-gray-900 on code when inside pre (dark block) */
+pre .text-gray-900,
+pre code.text-gray-900 {
+	color: #f9fafb !important;
 }
