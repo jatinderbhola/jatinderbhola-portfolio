@@ -1,38 +1,67 @@
-import { readdir } from 'fs/promises';
+import { readdir, stat } from 'fs/promises';
 import { join } from 'path';
 import type { PageServerLoad } from './$types';
 
+const IMAGE_EXT = /\.(jpg|jpeg|png|webp)$/i;
+
+async function collectImagePaths(dir: string, base = ''): Promise<{ relativePath: string; fullPath: string }[]> {
+    const entries = await readdir(dir, { withFileTypes: true });
+    const result: { relativePath: string; fullPath: string }[] = [];
+    for (const e of entries) {
+        const rel = base ? `${base}/${e.name}` : e.name;
+        const full = join(dir, e.name);
+        if (e.isDirectory()) {
+            const sub = await collectImagePaths(full, rel);
+            result.push(...sub);
+        } else if (IMAGE_EXT.test(e.name)) {
+            result.push({ relativePath: rel, fullPath: full });
+        }
+    }
+    return result;
+}
+
 export const load: PageServerLoad = async () => {
-    // For static builds, read from the static directory
-    // Use a more robust path resolution
     const projectRoot = process.cwd();
     const staticPath = join(projectRoot, 'static', 'portfolio-images');
 
     try {
-        const files = await readdir(staticPath);
+        const imagePaths = await collectImagePaths(staticPath);
 
-        // Filter for image files
-        const imageFiles = files.filter((file) =>
-            /\.(jpg|jpeg|png|JPG|JPEG|PNG|webp|WEBP)$/i.test(file)
+        const itemsWithDate = await Promise.all(
+            imagePaths.map(async ({ relativePath, fullPath }) => {
+                const baseName = relativePath.replace(/\.[^/.]+$/, '').split('/').pop() ?? '';
+                const formattedTitle = baseName
+                    .replace(/[-_]/g, ' ')
+                    .replace(/\b\w/g, (char) => char.toUpperCase());
+                let date = new Date(0);
+                try {
+                    const st = await stat(fullPath);
+                    date = st.mtime;
+                } catch {
+                    // use epoch if stat fails
+                }
+                return {
+                    relativePath,
+                    title: formattedTitle,
+                    category: getCategoryFromFilename(baseName),
+                    date: date.toISOString()
+                };
+            })
         );
 
-        // Create gallery items from the images
-        const galleryItems = imageFiles.map((file, index) => {
-            const baseName = file.replace(/\.[^/.]+$/, ''); // Remove extension
-            const formattedTitle = baseName
-                .replace(/[-_]/g, ' ') // Replace dashes and underscores with spaces
-                .replace(/\b\w/g, (char) => char.toUpperCase()); // Capitalize first letter of each word
+        // Sort by date descending (newest first)
+        itemsWithDate.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-            return {
-                id: `image-${index + 1}`,
-                type: 'image' as const,
-                src: `/portfolio-images/${file}`,
-                thumbnail: `/portfolio-images/${file}`,
-                title: formattedTitle,
-                description: '',
-                category: getCategoryFromFilename(baseName)
-            };
-        });
+        const galleryItems = itemsWithDate.map((item, index) => ({
+            id: `image-${index + 1}`,
+            type: 'image' as const,
+            src: `/portfolio-images/${item.relativePath}`,
+            thumbnail: `/portfolio-images/${item.relativePath}`,
+            title: item.title,
+            description: '',
+            category: item.category,
+            date: item.date
+        }));
 
         return {
             galleryItems

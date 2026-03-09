@@ -10,6 +10,7 @@
 		title: string;
 		description?: string;
 		category?: string;
+		date?: string;
 	}
 
 	// Get gallery items from server
@@ -152,6 +153,8 @@
 									alt={item.title}
 									class="absolute inset-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
 									loading="lazy"
+									decoding="async"
+									fetchpriority="low"
 									on:error={() => {
 										imageErrors.add(item.id);
 										imageErrors = imageErrors; // trigger reactivity
@@ -300,6 +303,8 @@
 						src={selectedItem.src}
 						alt={selectedItem.title}
 						class="max-h-[90vh] max-w-full rounded-lg object-contain"
+						loading="eager"
+						decoding="async"
 					/>
 				{:else}
 					<video
