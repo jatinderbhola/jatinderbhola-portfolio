@@ -17,6 +17,10 @@
 			day: 'numeric'
 		});
 	}
+
+	function printPost() {
+		window.print();
+	}
 </script>
 
 <svelte:head>
@@ -53,14 +57,35 @@
 	</div>
 {:else}
 	<article class="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
-		<!-- Back to Blog -->
-		<div class="mb-6">
+		<!-- Back to Blog + Print -->
+		<div class="no-print mb-6 flex items-center justify-between">
 			<a
 				href="/blog"
 				class="text-indigo-600 font-medium transition-colors duration-200 hover:text-indigo-800"
 			>
 				← Back to Blog
 			</a>
+			<button
+				onclick={printPost}
+				class="flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-600 shadow-sm transition-all duration-200 hover:border-indigo-300 hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-md active:scale-95"
+				title="Print this article"
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="h-4 w-4"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+					stroke-width="2"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"
+					/>
+				</svg>
+				Print
+			</button>
 		</div>
 
 		<!-- Post Header -->
@@ -105,15 +130,36 @@
 
 	<!-- Post Footer -->
 	<footer class="mt-12 border-t border-gray-200 pt-8">
-		<div class="flex items-center justify-between">
+		<div class="no-print flex items-center justify-between">
 			<a
 				href="/blog"
 				class="text-indigo-600 font-medium transition-colors duration-200 hover:text-indigo-800"
 			>
 				← Back to Blog
 			</a>
-			<div class="text-sm text-gray-500">
-				Published on {formatDate(post.date)}
+			<div class="flex items-center gap-4">
+				<button
+					onclick={printPost}
+					class="flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-600 shadow-sm transition-all duration-200 hover:border-indigo-300 hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-md active:scale-95"
+					title="Print this article"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="h-4 w-4"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+						stroke-width="2"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"
+						/>
+					</svg>
+					Print
+				</button>
+				<span class="text-sm text-gray-500">Published on {formatDate(post.date)}</span>
 			</div>
 		</div>
 	</footer>
@@ -233,5 +279,72 @@
 	:global(.prose [class*="code-snippet"] pre code) {
 		color: #f9fafb !important;
 		background: transparent !important;
+	}
+
+	/* ── Print styles ── */
+	.no-print {
+		display: flex;
+	}
+
+	@media print {
+		.no-print {
+			display: none !important;
+		}
+
+		/* Hide site-wide nav/header/footer */
+		:global(nav),
+		:global(header),
+		:global(footer:not(article footer)) {
+			display: none !important;
+		}
+
+		:global(body) {
+			background: white !important;
+			color: black !important;
+			font-size: 12pt;
+		}
+
+		:global(article) {
+			max-width: 100% !important;
+			padding: 0 !important;
+			margin: 0 !important;
+		}
+
+		/* Print URL after links */
+		:global(.prose a::after) {
+			content: ' (' attr(href) ')';
+			font-size: 0.75em;
+			color: #555;
+		}
+
+		/* Keep code blocks readable in print */
+		:global(.prose pre) {
+			background-color: #f3f4f6 !important;
+			color: #111 !important;
+			border: 1px solid #d1d5db;
+			page-break-inside: avoid;
+		}
+
+		:global(.prose pre code),
+		:global(.prose pre *) {
+			color: #111 !important;
+		}
+
+		:global(.prose blockquote) {
+			border-left: 3px solid #6366f1;
+			color: #374151;
+		}
+
+		/* Avoid page breaks inside headings/paragraphs */
+		:global(.prose h2),
+		:global(.prose h3),
+		:global(.prose h4) {
+			page-break-after: avoid;
+		}
+
+		:global(.prose p),
+		:global(.prose li) {
+			page-break-inside: avoid;
+		}
 	}
 </style>
