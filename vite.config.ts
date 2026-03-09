@@ -3,8 +3,6 @@ import tailwindcss from '@tailwindcss/vite';
 import { svelteTesting } from '@testing-library/svelte/vite';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 
 // More info at: https://storybook.js.org/docs/writing-tests/test-addon
 export default defineConfig({
@@ -16,6 +14,10 @@ export default defineConfig({
 			outdir: './src/lib/paraglide'
 		})
 	],
+	ssr: {
+		// gray-matter is CJS and uses require() - must be external so Node loads it at SSR runtime
+		noExternal: ['remark', 'remark-html', 'remark-gfm']
+	},
 	test: {
 		workspace: [
 			{

@@ -1,7 +1,5 @@
 import { readdir } from 'fs/promises';
 import { join } from 'path';
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async () => {

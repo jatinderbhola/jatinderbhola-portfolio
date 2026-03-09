@@ -1,3 +1,37 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+/* Global fixes for text visibility */
+select {
+	color: #111827 !important; /* gray-900 */
+	background-color: #ffffff !important;
+}
+
+select option {
+	color: #111827 !important; /* gray-900 */
+	background-color: #ffffff !important;
+}
+
+/* Ensure headings have visible text on light backgrounds */
+h1, h2, h3, h4, h5, h6 {
+	color: #111827; /* gray-900 */
+}
+
+/* Ensure body text is visible */
+body {
+	color: #111827; /* gray-900 */
+}
+
+/* Fix for code blocks with light backgrounds */
+pre.bg-gray-50,
+pre[class*="bg-gray-50"] {
+	background-color: #1f2937 !important; /* gray-800 */
+	color: #f9fafb !important; /* gray-50 */
+}
+
+pre.bg-gray-50 code,
+pre[class*="bg-gray-50"] code {
+	color: #f9fafb !important;
+	background: transparent !important;
+}

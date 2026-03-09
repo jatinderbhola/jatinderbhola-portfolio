@@ -54,7 +54,7 @@
 
 <!-- Main Container -->
 <div class="container mx-auto px-4 py-8">
-	<h1 class="mb-6 text-3xl font-bold">System Design Examples</h1>
+	<h1 class="mb-6 text-3xl font-bold text-gray-900">System Design Examples</h1>
 
 	<!-- Example Selection -->
 	<div class="mb-6">
@@ -65,7 +65,7 @@
 			id="example-select"
 			bind:value={selectedExample}
 			on:change={handleExampleChange}
-			class="w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none md:w-96"
+			class="w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-gray-900 shadow-sm focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none md:w-96"
 		>
 			<option value="">Select an example...</option>
 			{#each systemDesignExamples as example}
@@ -242,5 +242,21 @@
 			opacity: 1;
 			transform: translateY(0);
 		}
+	}
+
+	/* Ensure select dropdown and options have visible text */
+	select {
+		color: #111827 !important; /* gray-900 */
+		background-color: #ffffff !important;
+	}
+
+	select option {
+		color: #111827 !important; /* gray-900 */
+		background-color: #ffffff !important;
+	}
+
+	/* Ensure headings have visible text */
+	h1, h2, h3, h4, h5, h6 {
+		color: #111827 !important; /* gray-900 */
 	}
 </style>

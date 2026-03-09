@@ -18,20 +18,75 @@ This project is configured for **static deployment** on Cloudflare Pages (no ser
 
 ## Deployment Steps
 
-### Option 1: Deploy via Cloudflare Dashboard (Recommended)
+### Option 1: Automatic Deployment via Cloudflare Dashboard (Recommended)
+
+This setup enables automatic deployments on every push to your `main` branch.
+
+#### Step 1: Connect Your Git Repository
 
 1. Go to [Cloudflare Dashboard](https://dash.cloudflare.com/)
 2. Navigate to **Pages** → **Create a project**
-3. Connect your Git repository (GitHub, GitLab, or Bitbucket)
-4. Configure build settings:
-   - **Framework preset**: `None` or `SvelteKit`
-   - **Build command**: `npm run build`
-   - **Build output directory**: `build`
-   - **Root directory**: `/` (leave empty if root)
-   - **Node version**: `20`
-5. Click **Save and Deploy**
+3. Click **Connect to Git**
+4. Select your Git provider (GitHub, GitLab, or Bitbucket)
+5. Authorize Cloudflare to access your repositories
+6. Select your repository: `jatinderbhola-portfolio` (or your repo name)
+7. Click **Begin setup**
 
-Your site will automatically deploy on every push to your main branch.
+#### Step 2: Configure Build Settings
+
+In the build configuration screen, set the following:
+
+**Project name:**
+- Enter a name for your project (e.g., `jatinderbhola-portfolio`)
+
+**Production branch:**
+- Set to: `main` (or `master` if that's your default branch)
+
+**Build settings:**
+- **Framework preset**: Select `None` (or `SvelteKit` if available)
+- **Build command**: `npm run build`
+- **Build output directory**: `build`
+- **Root directory**: Leave empty (or `/` if root)
+- **Environment variables**: Add any if needed (usually none required)
+
+**Node version:**
+- Click **Show advanced options**
+- Set **Node version**: `20`
+
+#### Step 3: Save and Deploy
+
+1. Click **Save and Deploy**
+2. Cloudflare will:
+   - Clone your repository
+   - Install dependencies (`npm install`)
+   - Run the build command (`npm run build`)
+   - Deploy the `build/` directory
+
+#### Step 4: Verify Automatic Deployments
+
+After the initial deployment:
+
+1. Make a change to your code
+2. Commit and push to the `main` branch:
+   ```bash
+   git add .
+   git commit -m "Test auto-deployment"
+   git push origin main
+   ```
+3. Go to your Cloudflare Pages project dashboard
+4. You should see a new deployment automatically triggered
+5. The deployment will show as "Building" → "Deploying" → "Active"
+
+#### Deployment Status
+
+- **Production deployments**: Automatically triggered on pushes to `main` branch
+- **Preview deployments**: Automatically created for pull requests (optional)
+- **Build logs**: Available in the Cloudflare Pages dashboard
+- **Deployment URL**: `https://your-project-name.pages.dev`
+
+### Option 2: Manual Deployment via Wrangler CLI
+
+For one-time or manual deployments:
 
 ### Option 2: Deploy via Wrangler CLI
 

@@ -79,7 +79,7 @@
 
 				<div class="code-snippet mb-4">
 					<h3 class="mb-2 text-sm font-semibold text-gray-700">Code Pattern:</h3>
-					<pre class="overflow-x-auto rounded bg-gray-50 p-3 text-sm"><code
+					<pre class="overflow-x-auto rounded bg-gray-50 p-3 text-sm text-gray-900"><code
 							>{pattern.codeSnippet}</code
 						></pre>
 				</div>
@@ -223,6 +223,12 @@
 		line-height: 1.4;
 		height: 300px;
 		overflow-y: auto;
+		color: #111827 !important; /* Ensure text is visible - gray-900 */
+	}
+
+	.code-snippet pre code {
+		color: #111827 !important; /* Ensure code text is visible */
+		background: transparent !important;
 	}
 
 	/* Complexity Section */
