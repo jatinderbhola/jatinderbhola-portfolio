@@ -1,6 +1,7 @@
 import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 import { getPostBySlug, getAllPosts } from '$lib/server/blog';
+import { parseBlogFromParams, buildBlogListQuery } from '$lib/blog-config';
 
 // Generate all blog post slugs for prerendering
 export async function entries() {
@@ -8,7 +9,7 @@ export async function entries() {
 	return posts.map((post) => ({ slug: post.slug }));
 }
 
-export const load: PageServerLoad = async ({ params }) => {
+export const load: PageServerLoad = async ({ params, url }) => {
 	try {
 		const post = await getPostBySlug(params.slug);
 
@@ -16,8 +17,22 @@ export const load: PageServerLoad = async ({ params }) => {
 			throw error(404, 'Post not found');
 		}
 
+		let selectedTags: string[] = [];
+		let searchQuery = '';
+		try {
+			const parsed = parseBlogFromParams(url);
+			selectedTags = parsed.selectedTags;
+			searchQuery = parsed.searchQuery;
+		} catch {
+			// During prerender, url.searchParams may be unavailable
+		}
+		const backToBlogQuery = buildBlogListQuery(selectedTags, searchQuery);
+
 		return {
-			post
+			post,
+			backToBlogQuery,
+			fromTags: selectedTags,
+			fromSearch: searchQuery
 		};
 	} catch (e) {
 		console.error('Error loading blog post:', e);

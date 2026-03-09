@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
+	import { buildBlogListQuery } from '$lib/blog-config';
 
 	interface Props {
 		data?: PageData;
@@ -8,6 +9,14 @@
 	let { data }: Props = $props();
 
 	const post = $derived(data?.post || null);
+	const backToBlogQuery = $derived(data?.backToBlogQuery ?? '');
+	const fromTags = $derived(data?.fromTags ?? []);
+	const fromSearch = $derived(data?.fromSearch ?? '');
+	const backToBlogHref = $derived('/blog' + backToBlogQuery);
+
+	function tagHref(tag: string): string {
+		return '/blog' + buildBlogListQuery([...fromTags, tag], fromSearch);
+	}
 
 	function formatDate(dateString: string): string {
 		const date = new Date(dateString);
@@ -48,7 +57,7 @@
 			<h1 class="mb-4 text-2xl font-bold text-gray-900">Post not found</h1>
 			<p class="mb-4 text-gray-600">The blog post you're looking for doesn't exist.</p>
 			<a
-				href="/blog"
+				href={backToBlogHref}
 				class="text-indigo-600 font-medium transition-colors duration-200 hover:text-indigo-800"
 			>
 				← Back to Blog
@@ -60,7 +69,7 @@
 		<!-- Back to Blog + Print -->
 		<div class="no-print mb-6 flex items-center justify-between">
 			<a
-				href="/blog"
+				href={backToBlogHref}
 				class="text-indigo-600 font-medium transition-colors duration-200 hover:text-indigo-800"
 			>
 				← Back to Blog
@@ -111,7 +120,7 @@
 			<div class="mt-4 flex flex-wrap gap-2">
 				{#each post.tags as tag}
 					<a
-						href="/blog?tag={encodeURIComponent(tag)}"
+						href={tagHref(tag)}
 						class="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-700 transition-colors duration-200 hover:bg-indigo-100 hover:text-indigo-800"
 					>
 						{tag}
@@ -132,7 +141,7 @@
 	<footer class="mt-12 border-t border-gray-200 pt-8">
 		<div class="no-print flex items-center justify-between">
 			<a
-				href="/blog"
+				href={backToBlogHref}
 				class="text-indigo-600 font-medium transition-colors duration-200 hover:text-indigo-800"
 			>
 				← Back to Blog
