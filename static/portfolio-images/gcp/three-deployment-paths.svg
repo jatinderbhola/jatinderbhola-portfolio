@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 160" width="380" height="160">
+  <rect width="380" height="160" fill="#f8fafc" rx="8"/>
+  <text x="190" y="24" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#1e293b">Three ways to deploy your AI agent</text>
+  <rect x="20" y="44" width="100" height="100" fill="#eef2ff" stroke="#6366f1" stroke-width="2" rx="6"/>
+  <text x="70" y="78" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="600" fill="#4338ca">Vertex AI</text>
+  <text x="70" y="94" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#4f46e5">Agent Engine</text>
+  <text x="70" y="112" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#6366f1">Managed, Python</text>
+  <text x="70" y="128" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#6366f1">No containers</text>
+  <rect x="140" y="44" width="100" height="100" fill="#ecfdf5" stroke="#059669" stroke-width="2" rx="6"/>
+  <text x="190" y="78" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="600" fill="#047857">Cloud Run</text>
+  <text x="190" y="94" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#059669">Serverless</text>
+  <text x="190" y="112" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#10b981">Containers, any lang</text>
+  <text x="190" y="128" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#10b981">Scale to zero</text>
+  <rect x="260" y="44" width="100" height="100" fill="#fef3c7" stroke="#d97706" stroke-width="2" rx="6"/>
+  <text x="310" y="78" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="600" fill="#92400e">GKE</text>
+  <text x="310" y="94" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#b45309">Kubernetes</text>
+  <text x="310" y="112" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#d97706">Full control</text>
+  <text x="310" y="128" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#d97706">Microservices</text>
+</svg>
